@@ -1,0 +1,219 @@
+.sub-navbar-desktop {
+  background: $branco;
+}
+.logo {
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 249px;
+  height: 38px;
+  display: block;
+}
+.itens-sub-nav div span,
+.itens-sub-nav div a,
+.itens-sub-nav a span {
+  transition: color 0.3s;
+  transition: background-image 0.3s;
+}
+
+.sub-navbar-desktop {
+  span {
+    margin: 0 8px;
+    width: 30px;
+  }
+  :hover {
+    color: $verde;
+  }
+  //redes sociais ajustes e hover
+  .youtube {
+    margin-right: 12px;
+    background-image: url(../img/icons/youtube.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 23px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    &:hover {
+      background-image: url(../img/icons/youtube-hover.svg);
+    }
+  }
+  .facebook {
+    margin-right: 12px;
+    background-image: url(../img/icons/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    &:hover {
+      background-image: url(../img/icons/facebook-hover.svg);
+    }
+  }
+  .instagram {
+    margin-right: 12px;
+    background-image: url(../img/icons/instagram.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    &:hover {
+      background-image: url(../img/icons/instagram-hover.svg);
+    }
+  }
+}
+
+//dropdown
+.dropdown {
+  .btn-dropdown {
+    font-size: 14px;
+    font-weight: 500;
+    &:hover {
+      text-decoration: none;
+      color: $verde;
+    }
+    //bordas ao lado drop linguagem
+    border-left: 1px solid $cinza-claro;
+    border-right: 1px solid $cinza-claro;
+    margin: 0 10px;
+    padding: 0 10px;
+  }
+}
+
+// encomendas
+.encomendas {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  border-right: 1px solid $cinza-claro;
+  padding-right: 15px;
+  &:hover {
+    .icon-encomendas {
+      background-image: url(../img/icons/carrinho-hover.svg);
+    }
+  }
+
+  .icon-encomendas {
+    background-image: url(../img/icons/carrinho.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+//minha conta
+.minha-conta {
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 15px;
+  padding-left: 10px;
+  .minha-conta-link {
+    &:hover {
+      .icon-conta {
+        background-image: url(../img/icons/perfil-hover.svg);
+      }
+    }
+  }
+
+  .icon-conta {
+    background-image: url(../img/icons/perfil.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .favoritas {
+    background-image: url(../img/icons/coracao.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+
+    &:hover {
+      background-image: url(../img/icons/coracao-hover.svg);
+    }
+  }
+  .sacola {
+    background-image: url(../img/icons/sacola.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    transition: 0.3s;
+    margin-bottom: 2px;
+    position: relative;
+    &:hover {
+      background-image: url(../img/icons/sacola-hover.svg);
+    }
+  }
+}
+//notificações
+.badge {
+  display: none;
+  background: $verde;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: $branco;
+  &:hover {
+    color: $branco;
+  }
+}
+//classe ativo mostra a badge
+.ativo.badge {
+  display: inline-flex;
+}
+
+.mobile .sub-navbar-desktop {
+  display: none;
+}
+
+//menu mobile
+.desktop .sub-navbar-mobile {
+  display: none;
+}
+.mobile .sub-navbar-mobile {
+  display: block;
+  background: $branco;
+  .logo {
+    background-image: url(../img/logo-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 174px;
+    height: 28px;
+    display: block;
+  }
+  .sacola {
+    margin: 0 10px;
+  }
+  .icon-conta {
+    width: 20px;
+    height: 20px;
+  }
+  //aumentar zona de toque mobile
+  a {
+    padding: 10px 10px;
+  }
+  .sacola-link {
+    padding: 10px 10px;
+  }
+}
