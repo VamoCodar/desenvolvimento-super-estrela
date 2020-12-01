@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -12px;
 }
 button.comprar {
   display: flex;
@@ -106,7 +107,7 @@ button.comprar {
 .carousel-control-next {
   top: initial;
   bottom: 30px;
-  right: 150px;
+  right: 100px;
   width: 50px;
   height: 50px;
   @include d(m) {
@@ -140,7 +141,7 @@ button.comprar {
     content: "";
     position: absolute;
     width: 130px;
-    height: 65px;
+    height: 50px;
     background: $branco;
     display: block;
     left: 0;
@@ -150,7 +151,7 @@ button.comprar {
     border-radius: 27px;
     @include d(s) {
       width: 110px;
-      height: 45px;
+      height: 30px;
       bottom: -15px;
     }
   }
@@ -158,7 +159,7 @@ button.comprar {
 
 //bolinhas carousel
 .carousel-indicators {
-  bottom: -30px;
+  bottom: -46px;
   li {
     background: none;
     background-image: url(../img/icons/bolinha.svg);
