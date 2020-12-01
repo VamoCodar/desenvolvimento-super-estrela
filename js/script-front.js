@@ -57,6 +57,29 @@ $(".carousel").carousel({
   interval: 20500, //depois ajustar, pra n ficar passando
 });
 
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    center: false,
+    singleItem: true,
+    navigation: false, // Show next and prev buttons
+    slideSpeed: 300,
+    items: 1,
+    1000: {
+      center: true,
+    },
+  });
+});
+/* 
+$(document).ready(function () {
+  $(".mobile .slick-container").owlCarousel({
+    center: true,
+    singleItem: true,
+    navigation: false,
+    slideSpeed: 300,
+    items: 1,
+  });
+}); */
+
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);

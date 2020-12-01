@@ -20,6 +20,8 @@
 
 .cards {
   grid-area: cards;
+  max-width: 520px;
+  min-width: 300px;
   .card-context {
     margin-top: auto;
     margin-bottom: 40px;
@@ -94,7 +96,11 @@
       }
     }
   }
+  .card-2 {
+    background-image: url(../img/card-2.png);
+  }
 }
+
 //card mobile
 .mobile .card {
   max-width: 300px;
@@ -116,7 +122,12 @@
     font-size: 20px;
   }
 }
+.mobile .owl-carousel.owl-loaded {
+  display: block;
+  margin: 0 auto;
+}
 .mobile .cards {
+  min-width: 240px;
   .card-context {
     margin-top: auto;
     margin-bottom: 10px;
@@ -294,6 +305,7 @@
 
 //produtos slick container
 .slick-container {
+  min-width: 620px;
   grid-area: produtos;
   height: 200px;
   margin-left: 0px;
@@ -303,6 +315,7 @@
     }
   }
 }
+
 .slick-card {
   position: relative;
   padding: 10px 15px;
@@ -410,9 +423,29 @@
     }
   }
 }
+//produtos cards mobile
+.mobile .slick-container {
+  min-width: initial;
+  .slick-card {
+    margin-top: 30px;
+    width: 250px;
+    height: 270px;
+    h2 {
+      color: #3c3c3c;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 23.52px;
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+}
 .slick-card-2 {
-  margin-left: auto;
   margin-right: 10px;
+  margin-left: auto;
 }
 .mobile .slick-card-2 {
   margin-right: initial;
