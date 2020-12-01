@@ -1,0 +1,59 @@
+//bloco de produtos apos o carousel inicial
+
+.bloco-1 {
+  display: grid;
+  grid-template-areas:
+    "cards pao"
+    "cards produtos";
+  margin-top: 100px;
+}
+
+.cards {
+  grid-area: cards;
+  .card-context {
+    margin-top: auto;
+    margin-bottom: 40px;
+    border: solid 0, 84000003px #979797;
+    background: rgba(255, 255, 255, 0.73);
+    padding: 0px 30px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    h5 {
+      padding-top: 20px;
+      font-size: 28px;
+      font-weight: 500;
+      color: $verde;
+      display: inline-block;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      color: $preto-claro;
+    }
+  }
+  .card {
+    width: 460px;
+    height: 450px;
+    background-image: url(../img/card-ana-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.padaria {
+  height: 140px;
+  grid-area: pao;
+  background: $verde;
+}
+
+.slick-container {
+  grid-area: produtos;
+  height: 200px;
+  .slick-card {
+    h2 {
+      font-size: 18px;
+    }
+  }
+}

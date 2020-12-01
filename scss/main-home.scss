@@ -1,8 +1,7 @@
 $branco: #fbfbfb;
 $cinza-claro: #d8d8d8;
 $verde: #77b030;
-
-//imports bootstrap
+$preto-claro: #363636; //imports bootstrap
 //comentados os features que n estão sendo usados
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -47,10 +46,12 @@ $verde: #77b030;
 @import "menu";
 @import "animacoes";
 @import "carousel";
+@import "bloco-1";
 
 body {
   font-family: "Montserrat", sans-serif;
   height: 3000px;
+  background: $branco;
 }
 .container {
   padding-right: 25px;
