@@ -10,19 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS customizado -->
     <link rel="stylesheet" href="css/main-home.css">
-
-
-
-
     <title>Super Estrela Supermercados</title>
 </head>
 
 <body>
-    <!-- subMenu desktop -->
-    <div class=" fixed-top sub-navbar-desktop py-3">
+
+
+
+    <!-- subMenu  BRANCO DESKTOP -->
+    <div class=" fixed-top sub-navbar-desktop py-2">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="logo"><a href="index.html"></a></div>
+                <a href="index.html" class="logo"></a>
                 <div class="itens-sub-nav row">
                     <!-- sociais -->
                     <a href="#"><span class="youtube"></span></a>
@@ -57,10 +56,11 @@
             </div>
         </div>
     </div>
-    <div class="fixed-top sub-navbar-mobile py-3">
+    <!-- submenu BRANCO MOBILE -->
+    <div class="fixed-top sub-navbar-mobile py-2">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="logo"><a href="index.html"></a></div>
+                <a href="index.html" class="logo"></a>
                 <div class="itens-sub-nav row">
                     <div class="minha-conta">
                         <a class="minha-conta-link" href="minha-conta.html"><span class="icon-conta"></span></a>
@@ -71,6 +71,236 @@
             </div>
         </div>
     </div>
+    <!-- MENU VERDE  -->
+    <nav class="navbar-desktop fixed-top ">
+        <div class="container">
+            <div class="row  align-items-center">
+                <!-- CATEGORIAS DROPDOWN -->
+                <div class=" navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <div class="dropdown-menu dropbottom">
+                                <form class="accordion" id="accordionExample">
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+                                            Mercearia
+                                        </a>
+                                        <button href="#" id="collapseOne" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo da mercearia1
+                                        </button>
+                                        <button href="#" id="collapseOne" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo da mercearia2
+                                        </button>
+                                        <button href="#" id="collapseOne" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo da mercearia3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion " data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
+                                            Frescos e Laticínios
+                                        </a>
+                                        <button href="#" id="collapseTwo" class="collapse px-3 " data-parent="#accordionExample">
+                                            Leite
+                                        </button>
+                                        <button href="#" id="collapseTwo" class="collapse px-3 " data-parent="#accordionExample">
+                                            Natas
+                                        </button>
+                                        <button href="#" id="collapseTwo" class="collapse px-3 " data-parent="#accordionExample">
+                                            Bebida Vegetal
+                                        </button>
+                                        <button href="#" id="collapseTwo" class="collapse px-3 " data-parent="#accordionExample">
+                                            Molho Bechamel
+                                        </button>
+                                        <button href="#" id="collapseTwo" class="collapse px-3 " data-parent="#accordionExample">
+                                            Leite Condensado
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseOne">
+                                            Congelados
+                                        </a>
+                                        <button href="#" id="collapseThree" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo congelados 1
+                                        </button>
+                                        <button href="#" id="collapseThree" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo congelados 2
+                                        </button>
+                                        <button href="#" id="collapseThree" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo congelados 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseFour" aria-controls="collapseOne">
+                                            Alimentação Saudável
+                                        </a>
+                                        <button href="#" id="collapseFour" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo saudavel 1
+                                        </button>
+                                        <button href="#" id="collapseFour" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo saudavel 2
+                                        </button>
+                                        <button href="#" id="collapseFour" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo saudavel 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseFive" aria-controls="collapseOne">
+                                            Bebé
+                                        </a>
+                                        <button href="#" id="collapseFive" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo bebé 1
+                                        </button>
+                                        <button href="#" id="collapseFive" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo bebé 2
+                                        </button>
+                                        <button href="#" id="collapseFive" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo bebé 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseSix" aria-controls="collapseOne">
+                                            Bebidas
+                                        </a>
+                                        <button href="#" id="collapseSix" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bebidas 1
+                                        </button>
+                                        <button href="#" id="collapseSix" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bebidas 2
+                                        </button>
+                                        <button href="#" id="collapseSix" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bebidas 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseSeven" aria-controls="collapseOne">
+                                            Bebidas
+                                        </a>
+                                        <button href="#" id="collapseSeven" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bebidas 1
+                                        </button>
+                                        <button href="#" id="collapseSeven" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bebidas 2
+                                        </button>
+                                        <button href="#" id="collapseSeven" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bebidas 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseEight" aria-controls="collapseOne">
+                                            TAKE AWAY
+                                        </a>
+                                        <button href="#" id="collapseEight" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo TAKE AWAY 1
+                                        </button>
+                                        <button href="#" id="collapseEight" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo TAKE AWAY 2
+                                        </button>
+                                        <button href="#" id="collapseEight" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo TAKE AWAY 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseNine" aria-controls="collapseOne">
+                                            Higiene e Beleza
+                                        </a>
+                                        <button href="#" id="collapseNine" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Higiene e Beleza 1
+                                        </button>
+                                        <button href="#" id="collapseNine" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Higiene e Beleza 2
+                                        </button>
+                                        <button href="#" id="collapseNine" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Higiene e Beleza 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseTen" aria-controls="collapseOne">
+                                            Limpeza e papel
+                                        </a>
+                                        <button href="#" id="collapseTen" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Limpeza e papel 1
+                                        </button>
+                                        <button href="#" id="collapseTen" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Limpeza e papel 2
+                                        </button>
+                                        <button href="#" id="collapseTen" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Limpeza e papel 3
+                                        </button>
+
+                                    </div>
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseEleven" aria-controls="collapseOne">
+                                            Bazar
+                                        </a>
+                                        <button href="#" id="collapseEleven" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bazar 1
+                                        </button>
+                                        <button href="#" id="collapseEleven" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bazar 2
+                                        </button>
+                                        <button href="#" id="collapseEleven" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Bazar 3
+                                        </button>
+
+                                    </div>
+
+                                    <div>
+                                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapseTwelve" aria-controls="collapseOne">
+                                            Animais
+                                        </a>
+                                        <button href="#" id="collapseTwelve" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Animais 1
+                                        </button>
+                                        <button href="#" id="collapseTwelve" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Animais 2
+                                        </button>
+                                        <button href="#" id="collapseTwelve" class="collapse px-3 " data-parent="#accordionExample">
+                                            Conteudo Animais 3
+                                        </button>
+
+                                    </div>
+                                </form>
+
+
+                            </div>
+
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-items ml-auto">
+                    <ul class="row">
+
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">receitas</a></li>
+                        <li><a href="#">Promoçoes</a></li>
+                    </ul>
+                </div>
+                <div class="input-group busca ml-auto">
+                    <input type="text" class="form-control" placeholder="Digite o produto aqui" aria-label="Digite o produto aqui" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" id="button-addon2">Pesquisar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+    </nav>
 
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -80,6 +310,7 @@
     <!-- slick javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script-front.js"></script>
+
 
 </body>
 

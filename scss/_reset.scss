@@ -28,8 +28,6 @@ a:hover {
 
 * {
   box-sizing: border-box;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -71,4 +69,11 @@ fieldset {
 
 :focus {
   outline: 0px transparent !important;
+}
+button {
+  border: transparent 0px;
+  display: block;
+  background: transparent;
+  text-align: start;
+  width: 100%;
 }

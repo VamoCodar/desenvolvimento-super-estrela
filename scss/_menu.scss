@@ -1,3 +1,4 @@
+//subnav-branco
 .sub-navbar-desktop {
   background: $branco;
 }
@@ -9,6 +10,7 @@
   height: 38px;
   display: block;
 }
+//transition itens menu branco
 .itens-sub-nav div span,
 .itens-sub-nav div a,
 .itens-sub-nav a span {
@@ -81,6 +83,9 @@
     margin: 0 10px;
     padding: 0 10px;
   }
+}
+.dropdown-menu {
+  z-index: 1040;
 }
 
 // encomendas
@@ -215,5 +220,204 @@
   }
   .sacola-link {
     padding: 10px 10px;
+  }
+}
+
+//navbar verde
+.navbar-desktop {
+  margin-top: 54px;
+  background: $verde;
+  padding: 6px 0;
+  @include d(m) {
+    padding: 10px 0;
+  }
+}
+.mobile .navbar-desktop {
+  margin-top: 44px;
+}
+
+//dropdown categorias
+//classe que segura todas para aplicar os estilos somente a barra verde
+.navbar-desktop {
+  .navbar-collapse {
+    transition: 0.3s;
+    background: $branco;
+    position: relative;
+    a:hover {
+      color: $verde;
+    }
+  }
+
+  .dropdown-toggle {
+    &:after {
+      display: none;
+    }
+  }
+
+  .navbar-collapse::before {
+    content: "";
+    background-image: url("../img/icons/hamburg-categoria.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+  }
+  .navbar-collapse:hover {
+    .dropdown-toggle {
+      color: $verde;
+    }
+    &:before {
+      background-image: url("../img/icons/hamburg-hover.svg");
+    }
+    &:after {
+      background-image: url("../img/icons/setinha-hover.svg");
+    }
+  }
+  .navbar-collapse {
+    transition: 0.3s;
+    //taamanho do botao categorias é dado pelo padding nos As
+    a {
+      padding: 10px 90px;
+      display: block;
+      @include d(s) {
+        padding: 10px 66px;
+      }
+    }
+  }
+  @keyframes descida {
+    0% {
+      opacity: 0;
+      clip-path: inset(0 0 100% 0);
+      transform: translateY(-37px);
+    }
+    100% {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+      transform: translateY(37px);
+    }
+  }
+  //setinha de categorias
+  .navbar-collapse::after {
+    content: "";
+    background-image: url("../img/icons/setinha.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 7px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+  }
+  //menu aberto do dropdown
+  .dropdown-menu {
+    width: 100%;
+    animation: descida 0.5s ease both;
+    border: none;
+    margin-top: -4px;
+    font-size: 14px;
+
+    a {
+      cursor: pointer;
+      padding: 6px 15px;
+      @include d(s) {
+        padding: 5px 15px;
+      }
+    }
+    button {
+      color: rgb(79, 79, 79);
+      &:hover {
+        color: $verde !important;
+        text-decoration: underline;
+      }
+    }
+  }
+  .dropdown-menu.show {
+    transition: 0.3s ease !important;
+  }
+
+  .item-accordion {
+    position: relative;
+    display: inline-block;
+    //setinha dos items
+    &:after {
+      content: "";
+      background-image: url("../img/icons/setinha.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 10px;
+      height: 7px;
+      display: inline-block;
+      right: 10px;
+      top: 17px;
+      position: absolute;
+    }
+  }
+  //items abertos
+  .collapse {
+    background: rgb(245, 245, 245);
+    padding: 5px 0;
+  }
+}
+
+.navbar-desktop.fixed-top {
+  z-index: 2;
+}
+
+//menu do meio
+
+.menu-items {
+  @include d(m) {
+    display: none;
+  }
+  ul li a {
+    transition: 0.3s;
+    margin-left: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $branco;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.busca {
+  @include d(m) {
+    display: none;
+  }
+  input {
+    background: transparent;
+  }
+  .form-control {
+    border-radius: 0;
+    border: 1px solid $cinza-claro;
+  }
+  ::placeholder {
+    color: $branco;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  max-width: 300px;
+  .btn-secondary {
+    background: $branco;
+    color: $black;
+    font-size: 12px;
+    &:before {
+      content: "";
+      display: inline-block;
+      background-image: url(../img/icons/lupa.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 13px;
+      height: 13px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
   }
 }

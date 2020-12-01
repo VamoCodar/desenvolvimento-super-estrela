@@ -8,22 +8,22 @@ $verde: #77b030;
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 @import "bootstrap/root";
-//@import "bootstrap/reboot";
+@import "bootstrap/reboot";
 @import "bootstrap/type"; //pegando algumas margins
-//@import "bootstrap/images";
+@import "bootstrap/images";
 @import "bootstrap/code";
 @import "bootstrap/grid"; //usado colunas e row
-//@import "bootstrap/tables";
-//@import "bootstrap/forms";
-//@import "bootstrap/buttons";
-//@import "bootstrap/transitions";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
 @import "bootstrap/dropdown";
-//@import "bootstrap/button-group";
-//@import "bootstrap/input-group";
-//@import "bootstrap/custom-forms";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
 //@import "bootstrap/nav";
 //@import "bootstrap/navbar";
-//@import "bootstrap/card";
+@import "bootstrap/card";
 //@import "bootstrap/breadcrumb";
 //@import "bootstrap/pagination";
 @import "bootstrap/badge";
@@ -37,7 +37,7 @@ $verde: #77b030;
 //@import "bootstrap/modal";
 //@import "bootstrap/tooltip";
 //@import "bootstrap/popover";
-//@import "bootstrap/carousel";
+@import "bootstrap/carousel";
 //@import "bootstrap/spinners";
 @import "bootstrap/utilities"; //usado para alinhamento de textos e etc
 //@import "bootstrap/print";
@@ -50,6 +50,7 @@ $verde: #77b030;
 body {
   background: wheat;
   font-family: "Montserrat", sans-serif;
+  height: 3000px;
 }
 .container {
   padding-right: 25px;
