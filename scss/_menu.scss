@@ -183,6 +183,12 @@
     color: $branco;
   }
 }
+.mobile .badge {
+  width: 15px;
+  height: 15px;
+  top: -4px;
+  right: -7px;
+}
 //classe ativo mostra a badge
 .ativo.badge {
   display: inline-flex;
@@ -230,6 +236,7 @@
   padding: 6px 0;
   @include d(m) {
     padding: 10px 0;
+    z-index: 99999;
   }
 }
 .mobile .navbar-desktop {

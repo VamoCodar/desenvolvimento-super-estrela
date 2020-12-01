@@ -22,11 +22,9 @@
 }
 @keyframes subidaMenu {
   0% {
-    z-index: -3000;
+    clip-path: inset(0 0 0 0);
   }
   100% {
-    z-index: -3000;
-
-    transform: translateY(-200%);
+    clip-path: inset(0 0 100% 0);
   }
 }
