@@ -237,7 +237,7 @@
 }
 
 //dropdown categorias
-//classe que segura todas para aplicar os estilos somente a barra verde
+//classe que segura todos drop
 .navbar-desktop {
   .navbar-collapse {
     transition: 0.3s;
@@ -255,6 +255,9 @@
   }
 
   .navbar-collapse::before {
+    @include d(m) {
+      display: none;
+    }
     content: "";
     background-image: url("../img/icons/hamburg-categoria.svg");
     background-repeat: no-repeat;
@@ -283,9 +286,12 @@
     a {
       padding: 10px 90px;
       display: block;
-      @include d(s) {
-        padding: 10px 66px;
+      @include d(m) {
+        padding: 10px;
+        padding-right: 110px;
+        padding-left: 15px;
       }
+      text-align: start;
     }
   }
   @keyframes descida {
@@ -298,6 +304,21 @@
       opacity: 1;
       clip-path: inset(0 0 0 0);
       transform: translateY(37px);
+    }
+  }
+  @keyframes descidaMenu {
+    0% {
+      opacity: 0;
+      clip-path: inset(0 0 100% 0);
+    }
+    100% {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  @keyframes subidaMenu {
+    100% {
+      transform: translateY(-200%);
     }
   }
   //setinha de categorias
@@ -328,6 +349,7 @@
         padding: 5px 15px;
       }
     }
+    //botoes dentro das secoes
     button {
       color: rgb(79, 79, 79);
       &:hover {
@@ -387,6 +409,7 @@
   }
 }
 
+//busca e estilos
 .busca {
   @include d(m) {
     display: none;
@@ -418,6 +441,61 @@
       height: 13px;
       margin-right: 10px;
       vertical-align: middle;
+    }
+  }
+}
+//hamburguer icon dispara menu mobile
+
+.desktop .menu-mobile {
+  display: none;
+}
+.menu-open .menu-mobile {
+  display: block;
+}
+.menu-closed .menu-mobile {
+  display: none;
+}
+.desktop .hamburguer {
+  display: none;
+}
+.mobile .hamburguer {
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icons/hamburguer-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 2px;
+    vertical-align: middle;
+  }
+}
+
+.menu-mobile {
+  position: absolute;
+  top: 0;
+  background: $verde;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 50px;
+  animation: descidaMenu 0.5s ease both;
+
+  li {
+    margin-top: 20px;
+    a {
+      color: $branco;
+      font-weight: 700;
+    }
+    &:last-child {
+      margin-bottom: 20px;
     }
   }
 }

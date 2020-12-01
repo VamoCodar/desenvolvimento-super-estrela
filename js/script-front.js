@@ -1,5 +1,7 @@
 //função que adiciona a classe mobile ou desktop dependendo do tamanho da tela
 const body = document.querySelector("body");
+const botaoMenuMobile = document.querySelector(".hamburguer");
+const menuMobile = document.querySelector(".menu-mobile");
 
 function checagem() {
   if (window.innerWidth >= 993) {
@@ -22,5 +24,32 @@ function resize() {
     body.classList.remove("desktop");
   }
 }
+//função abrir o menu
 
+function abreMenu() {
+  if (body.classList.contains("menu-open")) {
+    menuMobile.setAttribute("style", "animation: subidaMenu 300ms both ease;");
+    setTimeout(() => {
+      body.classList.remove("menu-open");
+      body.classList.add("menu-closed");
+      menuMobile.removeAttribute("style", "animation");
+    }, 300);
+  } else {
+    body.classList.toggle("menu-open");
+    body.classList.toggle("menu-closed");
+  }
+}
+function targetMenu(event) {
+  if (event.target != botaoMenuMobile && body.classList.contains("menu-open")) {
+    menuMobile.setAttribute("style", "animation: subidaMenu 300ms both ease;");
+    setTimeout(() => {
+      body.classList.remove("menu-open");
+      body.classList.add("menu-closed");
+      menuMobile.removeAttribute("style", "animation");
+    }, 300);
+  }
+}
+
+body.addEventListener("click", targetMenu);
+botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);
