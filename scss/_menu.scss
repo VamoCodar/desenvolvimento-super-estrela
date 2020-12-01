@@ -370,7 +370,7 @@
 }
 
 .navbar-desktop.fixed-top {
-  z-index: 2;
+  z-index: 30;
 }
 
 //menu do meio
@@ -381,7 +381,8 @@
   }
   ul li a {
     transition: 0.3s;
-    margin-left: 15px;
+    margin-left: 20px;
+
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -495,4 +496,13 @@
       margin-bottom: 20px;
     }
   }
+}
+.mobile .sub-navbar-mobile .sacola-link {
+  @include d(ss) {
+    padding: 10px 0px;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
 }

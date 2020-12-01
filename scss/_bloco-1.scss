@@ -7,6 +7,16 @@
     "cards produtos";
   margin-top: 100px;
 }
+.mobile .bloco-1 {
+  display: grid;
+  grid-template-areas:
+    "cards "
+    "pao "
+    "produtos";
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
 
 .cards {
   grid-area: cards;
@@ -15,45 +25,404 @@
     margin-bottom: 40px;
     border: solid 0, 84000003px #979797;
     background: rgba(255, 255, 255, 0.73);
-    padding: 0px 30px;
+    width: 95%;
+    padding: 0 40px;
     padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+    //titulo card
     h5 {
       padding-top: 20px;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 500;
       color: $verde;
-      display: inline-block;
+      display: block;
     }
+    //texto card
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: $preto-claro;
+    }
+  }
+  //card inner
+  .card {
+    max-width: 520px;
+    height: 510px;
+    background-image: url(../img/card-ana-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.13);
+    border: transparent;
+    cursor: default;
+    //numero card
+    span {
+      font-size: 120px;
+      color: $branco;
+      opacity: 0.7;
+      position: absolute;
+      bottom: 30%;
+      font-weight: 300;
+    }
+    h5 {
+      position: relative;
+      i.left {
+        background-image: url(../img/icons/esquerda-mini.svg);
+        width: 16px;
+        height: 8px;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+      }
+      i.right {
+        background-image: url(../img/icons/direita-mini.svg);
+        width: 16px;
+        height: 8px;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        top: 40px;
+      }
+    }
+  }
+}
+//card mobile
+.mobile .card {
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-size: 110%;
+  @include d(ss) {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  //numero card
+  span {
+    font-size: 58px;
+    bottom: 40%;
+  }
+  h5 {
+    font-size: 20px;
+  }
+}
+.mobile .cards {
+  .card-context {
+    margin-top: auto;
+    margin-bottom: 10px;
+    border: solid 0, 84000003px #979797;
+    background: rgba(255, 255, 255, 0.73);
+    width: 95%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    //texto card
     p {
       font-size: 12px;
       font-weight: 500;
       color: $preto-claro;
     }
   }
-  .card {
-    width: 460px;
-    height: 450px;
-    background-image: url(../img/card-ana-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
 }
 
 .padaria {
-  height: 140px;
+  padding: 20px;
+  height: 190px;
   grid-area: pao;
   background: $verde;
+  min-width: 480px;
+  position: relative;
+  p {
+    color: $branco;
+    opacity: 0.4;
+    text-transform: uppercase;
+  }
+  h5 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31.92px;
+  }
+
+  //alterações tamanho do botão
+  button.comprar {
+    margin-left: 8px;
+    max-width: 150px;
+    &:hover {
+      a {
+        color: $branco;
+      }
+    }
+    .circulo-completo {
+      width: 40px;
+      height: 20px;
+    }
+    .circulo-verde {
+      width: 20px;
+      height: 20px;
+    }
+    .circulo-branco {
+      width: 30px;
+      height: 30px;
+    }
+    margin-top: 60px;
+    i {
+      @include sacola-botao;
+      width: 10px;
+      height: 9px;
+    }
+    a {
+      font-size: 14px;
+      &:hover {
+        color: $branco;
+      }
+    }
+  }
+  .pao {
+    background-image: url(../img/produtos/pao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
+//padaria mobile
+
+.mobile .padaria {
+  height: 160px;
+  padding: 10px 15px;
+  max-width: 300px;
+  min-width: initial;
+  margin: 0 auto;
+  width: 300px;
+  @include d(ss) {
+    max-width: 250px;
+    height: 160px;
+  }
+  p {
+    color: $branco;
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  h5 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 31.92px;
+  }
+
+  //alterações tamanho do botão
+  button.comprar {
+    margin-left: 8px;
+    max-width: 150px;
+    &:hover {
+      a {
+        color: $branco;
+      }
+    }
+    .circulo-completo {
+      width: 40px;
+      height: 20px;
+    }
+    .circulo-verde {
+      width: 20px;
+      height: 20px;
+    }
+    .circulo-branco {
+      width: 30px;
+      height: 30px;
+    }
+    margin-top: 60px;
+    i {
+      @include sacola-botao;
+      width: 10px;
+      height: 9px;
+    }
+    a {
+      font-size: 12px;
+      &:hover {
+        color: $branco;
+      }
+    }
+  }
+  .pao {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+    @include d(ss) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+//produtos slick container
 .slick-container {
   grid-area: produtos;
   height: 200px;
+  margin-left: 0px;
   .slick-card {
     h2 {
       font-size: 18px;
     }
   }
+}
+.slick-card {
+  position: relative;
+  padding: 10px 15px;
+  margin-top: -40px;
+  width: 300px;
+  height: 300px;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.13);
+  h2 {
+    color: #3c3c3c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.52px;
+  }
+  span {
+    color: $verde;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  img {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .menos,
+  .mais {
+    background-image: url(../img/icons/menos.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    bottom: 70px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3),
+      0px 2px 2px rgba(100, 100, 100, 0.15);
+
+    border-radius: 50%;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .mais {
+    background-image: url(../img/icons/mais.svg);
+    bottom: 120px;
+  }
+  .circulo-verde {
+    bottom: 15px;
+    left: 32px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(100, 100, 100, 0.15);
+    &:hover {
+      transform: scale(1.1);
+    }
+    a {
+      position: absolute;
+      left: 45px;
+      font-size: 10px;
+      color: $verde;
+      vertical-align: middle;
+      bottom: 10px;
+      font-weight: 700;
+    }
+    &:after {
+      content: "";
+      display: flex;
+      background-image: url(../img/icons/sacola.svg);
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      margin-left: 11px;
+      margin-top: 8px;
+      align-items: center;
+    }
+  }
+  .badge {
+    background: $preto-claro;
+  }
+  .curtida {
+    display: inline-block;
+    background: url(../img/icons/coracao-fundo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 15px;
+    right: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 2px 2px rgba(100, 100, 100, 0.15);
+
+    border-radius: 50%;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.slick-card-2 {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.mobile .slick-card-2 {
+  margin-right: initial;
+  margin-left: initial;
+}
+.mobile .slick-container {
+  margin-left: -15px;
+}
+
+.mobile .slick-card {
+  margin: 0 auto;
+  margin-top: 20px;
 }
