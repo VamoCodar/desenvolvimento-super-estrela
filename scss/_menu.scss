@@ -213,8 +213,9 @@
     height: 28px;
     display: block;
   }
+  //items mobile
   .sacola {
-    margin: 0 10px;
+    margin: 0 5px;
   }
   .icon-conta {
     width: 20px;
@@ -328,7 +329,7 @@
       cursor: pointer;
       padding: 8px 15px;
       @include d(s) {
-        padding: 5px 15px;
+        padding: 7px 15px;
       }
     }
     //botoes dentro das secoes
@@ -449,7 +450,7 @@
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  // hamburguer
+  // hamburguer do menu
   &:after {
     content: "";
     display: inline-block;
@@ -462,6 +463,12 @@
     margin-left: 15px;
     vertical-align: middle;
     padding-bottom: 20px;
+  }
+  a {
+    color: white;
+    @include d(ss) {
+      display: none;
+    }
   }
 }
 
