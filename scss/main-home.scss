@@ -34,7 +34,6 @@ $verde: #77b030;
 //@import "bootstrap/list-group";
 //@import "bootstrap/close";
 //@import "bootstrap/toasts";
-//@import "bootstrap/modal";
 //@import "bootstrap/tooltip";
 //@import "bootstrap/popover";
 @import "bootstrap/carousel";
@@ -46,9 +45,11 @@ $verde: #77b030;
 @import "reset";
 @import "responsivo";
 @import "menu";
+@import "animacoes";
+@import "carousel";
 
 body {
-  background: wheat;
+  background: rgb(254, 239, 216);
   font-family: "Montserrat", sans-serif;
   height: 3000px;
 }

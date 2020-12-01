@@ -286,6 +286,7 @@
     a {
       padding: 10px 90px;
       display: block;
+      font-weight: 500;
       @include d(m) {
         padding: 10px;
         padding-right: 110px;
@@ -294,33 +295,7 @@
       text-align: start;
     }
   }
-  @keyframes descida {
-    0% {
-      opacity: 0;
-      clip-path: inset(0 0 100% 0);
-      transform: translateY(-37px);
-    }
-    100% {
-      opacity: 1;
-      clip-path: inset(0 0 0 0);
-      transform: translateY(37px);
-    }
-  }
-  @keyframes descidaMenu {
-    0% {
-      opacity: 0;
-      clip-path: inset(0 0 100% 0);
-    }
-    100% {
-      opacity: 1;
-      clip-path: inset(0 0 0 0);
-    }
-  }
-  @keyframes subidaMenu {
-    100% {
-      transform: translateY(-200%);
-    }
-  }
+
   //setinha de categorias
   .navbar-collapse::after {
     content: "";
@@ -331,8 +306,8 @@
     height: 7px;
     display: inline-block;
     position: absolute;
-    right: 10px;
-    top: 17px;
+    right: 20px;
+    top: 20px;
   }
   //menu aberto do dropdown
   .dropdown-menu {
@@ -341,10 +316,10 @@
     border: none;
     margin-top: -4px;
     font-size: 14px;
-
+    //as dentro de categorias
     a {
       cursor: pointer;
-      padding: 6px 15px;
+      padding: 8px 15px;
       @include d(s) {
         padding: 5px 15px;
       }
@@ -358,9 +333,6 @@
       }
     }
   }
-  .dropdown-menu.show {
-    transition: 0.3s ease !important;
-  }
 
   .item-accordion {
     position: relative;
@@ -372,9 +344,9 @@
       background-repeat: no-repeat;
       background-size: contain;
       width: 10px;
-      height: 7px;
+      height: 13px;
       display: inline-block;
-      right: 10px;
+      right: 20px;
       top: 17px;
       position: absolute;
     }
@@ -383,6 +355,9 @@
   .collapse {
     background: rgb(245, 245, 245);
     padding: 5px 0;
+  }
+  .dropdown-menu.show {
+    transition: 0.3s ease !important;
   }
 }
 
@@ -407,6 +382,9 @@
       color: black;
     }
   }
+}
+.categorias {
+  font-weight: 500;
 }
 
 //busca e estilos
@@ -464,17 +442,19 @@
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  &:before {
+  // hamburguer
+  &:after {
     content: "";
     display: inline-block;
+    text-transform: uppercase;
     background-image: url(../img/icons/hamburguer-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-    margin-top: 2px;
+    width: 22px;
+    height: 16px;
+    margin-left: 15px;
     vertical-align: middle;
+    padding-bottom: 20px;
   }
 }
 

@@ -29,6 +29,7 @@ function resize() {
 function abreMenu() {
   if (body.classList.contains("menu-open")) {
     menuMobile.setAttribute("style", "animation: subidaMenu 300ms both ease;");
+    //settimout para rolar a animação antes
     setTimeout(() => {
       body.classList.remove("menu-open");
       body.classList.add("menu-closed");
@@ -39,6 +40,7 @@ function abreMenu() {
     body.classList.toggle("menu-closed");
   }
 }
+//fecha menu e anima
 function targetMenu(event) {
   if (event.target != botaoMenuMobile && body.classList.contains("menu-open")) {
     menuMobile.setAttribute("style", "animation: subidaMenu 300ms both ease;");
@@ -49,6 +51,11 @@ function targetMenu(event) {
     }, 300);
   }
 }
+
+//carrousel bootstrap
+$(".carousel").carousel({
+  interval: 20500, //depois ajustar, pra n ficar passando
+});
 
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
