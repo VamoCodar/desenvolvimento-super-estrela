@@ -51,7 +51,17 @@ function targetMenu(event) {
     }, 300);
   }
 }
+//clona o filho
 
+/* function clonando() {
+  const ovelha = document.querySelectorAll(".ovelha");
+  let clone = document.querySelector(".clone-mobile");
+  ovelha.forEach((i) => {
+    let oi = i.cloneNode(true);
+    console.log(oi);
+  });
+}
+clonando(); */
 //carrousel bootstrap
 $(".carousel").carousel({
   interval: 20500, //depois ajustar, pra n ficar passando
@@ -112,56 +122,68 @@ $(".slick-container").slick({
   $(".slider").slick("slickPrev");
 });
  */
+//categorias
 
-$(".container-cartao").slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  centerMode: false,
-  centerPadding: "0px",
-  arrows: false,
+function owlInitialize() {
+  if ($(window).width() > 1110) {
+    $(".container-cartao").slick("unslick");
+  } else {
+    $(".container-cartao").slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 4,
+      centerMode: true,
+      centerPadding: "0px",
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1156,
+          settings: {
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            centerMode: false,
+            centerPadding: "0px",
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false,
+            centerMode: false,
+            variableWidth: true,
+          },
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false,
+            centerMode: false,
+            variableWidth: true,
+          },
+        },
 
-  responsive: [
-    {
-      breakpoint: 1156,
-      settings: {
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 3,
-        centerMode: false,
-        centerPadding: "0px",
-        arrows: false,
-      },
-    },
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        variableWidth: true,
-      },
-    },
-    {
-      breakpoint: 450,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        variableWidth: true,
-      },
-    },
-
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
+    });
+  }
+}
+//só tem carousel apartir de tal tamanho
+$(document).ready(function (e) {
+  owlInitialize();
+});
+$(window).resize(function () {
+  owlInitialize();
 });
 
 // trocar arrows do slick

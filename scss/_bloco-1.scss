@@ -202,21 +202,20 @@
       height: 20px;
     }
     .circulo-verde {
-      width: 20px;
-      height: 20px;
-    }
-    .circulo-branco {
       width: 30px;
       height: 30px;
+    }
+    .circulo-branco {
+      width: 40px;
+      height: 40px;
     }
     margin-top: 60px;
     i {
       @include sacola-botao;
-      width: 10px;
-      height: 9px;
     }
     a {
       font-size: 14px;
+      margin-left: 10px;
       &:hover {
         color: $branco;
       }
@@ -327,7 +326,6 @@
 .slick-container {
   margin-top: 10px;
   min-width: 620px;
-  max-width: 730px;
   grid-area: produtos;
   margin-left: 0px;
   .slick-card {
@@ -339,7 +337,6 @@
 
 .slick-card {
   margin-right: 20px;
-
   position: relative;
   padding: 10px 15px;
   max-width: 400px;
@@ -489,4 +486,11 @@
       transform: scale(1.1);
     }
   }
+}
+
+.clone-mobile {
+  display: none;
+}
+.mobile .clone-mobile {
+  display: block;
 }
