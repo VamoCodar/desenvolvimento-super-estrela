@@ -91,13 +91,16 @@
   }
   .todas {
     display: block;
-    text-align: end;
     color: #8c8c8c;
     font-size: 10px;
     font-weight: 500;
     line-height: 12px;
     text-decoration: underline;
-    margin-top: -65px;
+    cursor: pointer;
+    padding: 10px 0;
+    position: absolute;
+    right: 20px;
+    top: 6px;
   }
   .container-cartao {
     margin-top: 30px;
