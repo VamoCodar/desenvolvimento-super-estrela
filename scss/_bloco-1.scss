@@ -426,6 +426,9 @@
 //produtos cards mobile
 .mobile .slick-container {
   min-width: initial;
+  height: initial;
+  grid-area: initial;
+  width: 100%;
   .slick-card {
     margin-top: 30px;
     width: 250px;
@@ -453,6 +456,9 @@
 }
 .mobile .slick-container {
   margin-left: -15px;
+  @include d(ss) {
+    margin-left: 0px;
+  }
 }
 
 .mobile .slick-card {

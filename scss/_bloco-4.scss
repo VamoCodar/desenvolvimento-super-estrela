@@ -1,0 +1,19 @@
+.bloco-4 {
+  max-width: 100%;
+  height: 300px;
+  background: linear-gradient(-58deg, #afd85e, #77b030);
+  display: block;
+  background: linear-gradient(-58deg, #afd85e, #77b030);
+  max-width: 100%;
+  height: 400px;
+  margin-top: -145px;
+  padding-top: 200px;
+  z-index: -99;
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: $branco;
+  }
+}

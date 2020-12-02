@@ -69,16 +69,6 @@ $(document).ready(function () {
     },
   });
 });
-/* 
-$(document).ready(function () {
-  $(".mobile .slick-container").owlCarousel({
-    center: true,
-    singleItem: true,
-    navigation: false,
-    slideSpeed: 300,
-    items: 1,
-  });
-}); */
 
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);

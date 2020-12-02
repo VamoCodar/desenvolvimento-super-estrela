@@ -1,0 +1,73 @@
+//categorias
+.bloco-3 {
+  margin-top: 100px;
+  h2 {
+    color: $verde;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-bottom: 40px;
+  }
+
+  //estilos gerais
+  .categoria-cartao {
+    width: 248px;
+    height: 242px;
+    padding: 20px;
+    margin: 20px;
+    padding-top: 50px;
+    background-image: url(../img/mercearia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    li {
+      margin-left: 100px;
+      //titulo
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        color: $verde;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #6a6a6a;
+        display: inline-block;
+      }
+      a {
+        font-size: 12px;
+        padding: 8px 15px;
+        background: $verde;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $branco;
+        cursor: pointer;
+        border-radius: 18px;
+        display: inline-block;
+        margin-top: 10px;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
+        @include d(ss) {
+          font-size: 10px;
+          padding: 6px 12px;
+        }
+      }
+    }
+  }
+  .cartao-2 {
+    background-image: url(../img/laticinios.png);
+  }
+  .cartao-3 {
+    background-image: url(../img/bebidas.png);
+  }
+  .cartao-4 {
+    background-image: url(../img/congelados.png);
+  }
+}
