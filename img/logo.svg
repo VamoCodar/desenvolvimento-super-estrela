@@ -10,7 +10,7 @@
   <g id="mLogo" style="mix-blend-mode: multiply;">
     <path d="M0 0L249 0L249 38L0 38L0 0Z" id="Mask" fill="none" fill-rule="evenodd" stroke="none" />
     <g clip-path="url(#mask_1)">
-      <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="matrix(1.225 0 0 1.225 4 -109)" />
+      <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="matrix(1.15 0 0 1.15 3.5 -101)" />
     </g>
   </g>
 </svg>

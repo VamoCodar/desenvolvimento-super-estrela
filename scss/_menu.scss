@@ -3,10 +3,11 @@
   background: $branco;
 }
 .logo {
-  background-image: url(../img/logo.svg);
+  background-image: url(../img/logo2.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 249px;
+  background-size: cover;
+  background-position: center;
+  width: 260px;
   height: 38px;
   display: block;
 }
@@ -161,6 +162,7 @@
     transition: 0.3s;
     margin-bottom: 2px;
     position: relative;
+    margin-right: 0px;
     &:hover {
       background-image: url(../img/icons/sacola-hover.svg);
     }
@@ -207,7 +209,7 @@
   display: block;
   background: $branco;
   .logo {
-    background-image: url(../img/logo-mobile.svg);
+    background-image: url(../img/logo-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 174px;
@@ -235,7 +237,10 @@
 .navbar-desktop {
   margin-top: 54px;
   background: $verde;
-  padding: 6px 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: -15px;
+  padding-left: -15px;
   @include d(m) {
     padding: 10px 0;
     z-index: 99999;
