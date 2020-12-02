@@ -478,7 +478,7 @@
   }
   a {
     color: white;
-    @include d(ss) {
+    @include d(s) {
       display: none;
     }
   }

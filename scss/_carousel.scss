@@ -210,6 +210,7 @@ button.comprar {
   h2 {
     font-size: 24px;
     color: #595959;
+    margin: 15px 0;
   }
   button a {
     color: black;
@@ -218,6 +219,5 @@ button.comprar {
     border: 1px solid $verde;
   }
   .carousel-indicators {
-    top: 90%;
   }
 }
