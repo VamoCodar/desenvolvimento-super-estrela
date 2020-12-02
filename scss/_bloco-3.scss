@@ -30,6 +30,9 @@
     background-size: cover;
     position: relative;
     cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+    }
     li {
       margin-left: 100px;
       //titulo
