@@ -8,10 +8,18 @@
     line-height: 41px;
     margin-bottom: 40px;
   }
+  .container-cartao {
+    flex-wrap: nowrap !important;
+    overflow: hidden;
+  }
+  .todas {
+    display: none;
+  }
 
   //estilos gerais
   .categoria-cartao {
-    width: 248px;
+    min-width: 240px;
+    max-width: 240px;
     height: 242px;
     padding: 20px;
     margin: 20px;
@@ -69,5 +77,43 @@
   }
   .cartao-4 {
     background-image: url(../img/congelados.png);
+  }
+}
+
+.mobile .bloco-3 {
+  h2 {
+    margin-left: -15px;
+    position: relative;
+  }
+  .todas {
+    display: block;
+    text-align: end;
+    color: #8c8c8c;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    text-decoration: underline;
+    margin-top: -65px;
+  }
+  .container-cartao {
+    margin-top: 30px;
+  }
+  .prox {
+    background-image: url(../img/icons/prox.svg);
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    left: 40px;
+    cursor: pointer;
+  }
+  .ant {
+    background-image: url(../img/icons/ant.svg);
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    left: 10px;
+    cursor: pointer;
   }
 }

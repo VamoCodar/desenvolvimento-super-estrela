@@ -57,7 +57,7 @@ $(".carousel").carousel({
   interval: 20500, //depois ajustar, pra n ficar passando
 });
 
-$(document).ready(function () {
+/* $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     center: false,
     singleItem: true,
@@ -68,6 +68,108 @@ $(document).ready(function () {
       center: true,
     },
   });
+});
+ */
+//carrousel slick
+//slide mulher
+$(".owl-carousel").slick({
+  dots: false,
+  arrows: false,
+  slidesToShow: 1,
+});
+
+//slide produtos
+$(".slick-container").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  centerMode: false,
+  centerPadding: "0px",
+  arrows: false,
+  slidesToScroll: 1,
+
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
+
+/* $(".left").click(function () {
+  $(".slider").slick("slickPrev");
+});
+ */
+
+$(".container-cartao").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  centerMode: false,
+  centerPadding: "0px",
+  arrows: false,
+
+  responsive: [
+    {
+      breakpoint: 1156,
+      settings: {
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        centerMode: false,
+        centerPadding: "0px",
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+    {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
+
+// trocar arrows do slick
+$(".prox").click(function () {
+  $(".container-cartao").slick("slickNext");
+});
+$(".ant").click(function () {
+  $(".container-cartao").slick("slickPrev");
 });
 
 body.addEventListener("click", targetMenu);
