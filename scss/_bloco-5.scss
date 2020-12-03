@@ -70,25 +70,15 @@
   }
 }
 
-.mobile .bloco-5 {
-  height: 300px;
-
-  .texto {
-    p {
-      max-width: 280px;
-    }
-    a {
-      display: none;
-    }
-  }
-}
-
 @media (max-width: 841px) {
   .mobile .bloco-5 {
-    padding-top: 60px;
+    padding-top: 30px;
+    height: 230px;
+
     .receitas-container {
       max-width: 100%;
       overflow: hidden;
+      margin-top: 0;
 
       .receita-item {
         display: flex;
@@ -104,7 +94,7 @@
           font-size: 14px;
           font-weight: 700;
           text-transform: uppercase;
-          margin-bottom: 10px;
+          margin-bottom: 0px;
         }
         span {
           margin: 10px 0;
@@ -125,6 +115,14 @@
             transform: scale(1.1);
           }
         }
+      }
+    }
+    .texto {
+      p {
+        max-width: 280px;
+      }
+      a {
+        display: none;
       }
     }
   }

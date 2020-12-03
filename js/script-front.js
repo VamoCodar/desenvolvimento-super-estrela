@@ -1,6 +1,7 @@
 //função que adiciona a classe mobile ou desktop dependendo do tamanho da tela
 const body = document.querySelector("body");
 const botaoMenuMobile = document.querySelector(".hamburguer");
+const botaoMenuMobileA = document.querySelector(".hamburguer a");
 const menuMobile = document.querySelector(".menu-mobile");
 
 function checagem() {
@@ -257,8 +258,33 @@ function owlInitialize2() {
     });
   }
 }
+//iniializa carousel porte gratis
+function owlInitialize3() {
+  if ($(window).width() >= 1000) {
+    $(".porte-gratis").slick("unslick");
+  } else {
+    $(".porte-gratis").slick({
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      centerMode: true,
+      centerPadding: "0px",
+      arrows: false,
+      variableWidth: true,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+    });
+  }
+}
 //só tem carousel apartir de tal tamanho
 //receitas
+$(document).ready(function (e) {
+  owlInitialize3();
+});
+$(window).resize(function () {
+  owlInitialize3();
+});
 $(document).ready(function (e) {
   owlInitialize2();
 });

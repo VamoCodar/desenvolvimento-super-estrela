@@ -476,11 +476,38 @@
     vertical-align: middle;
     padding-bottom: 20px;
   }
-  a {
-    color: white;
-    @include d(s) {
-      display: none;
-    }
+}
+.hamburguer-group {
+  display: none;
+}
+.mobile .hamburguer-group {
+  display: flex;
+}
+/* .hamburguer-group {
+  margin-left: auto;
+  display: flex;
+  margin-right: 25px;
+  align-items: center;
+} */
+.mobile .menu-text {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+
+  @include d(s) {
+    font-size: 14px;
+    margin-right: -5px;
+  }
+  @include d(ss) {
+    font-size: 10px;
+
+    margin-right: -10px;
+  }
+}
+
+@media (max-width: 310px) {
+  .mobile .menu-text {
+    display: none;
   }
 }
 
