@@ -219,7 +219,9 @@ button.comprar {
     border: 1px solid $verde;
   }
 } */
-
+.desktop #element-clone {
+  display: none;
+}
 .mobile #element-clone {
   max-width: 500px;
   margin-top: 30px;

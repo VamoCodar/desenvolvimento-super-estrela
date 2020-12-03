@@ -64,13 +64,14 @@ function targetMenu(event) {
 }
 clonando(); */
 
-$(".carousel").on("slide.bs.carousel", function () {
+function CarouselCheck() {
   $(".active .ovelha").appendTo(".ovelha-doly");
-});
-
-window.onload = function () {
-  $(".active .ovelha").appendTo(".ovelha-doly");
-};
+  if ($(window).width() <= 1000) {
+    $(".carousel").on("slide.bs.carousel", function () {
+      $(".active .ovelha").appendTo(".ovelha-doly");
+    });
+  }
+}
 
 //carrousel bootstrap
 $(".carousel").carousel({
@@ -319,6 +320,12 @@ $(document).ready(function () {
 });
 $(window).resize(function () {
   owlInitialize();
+});
+$(document).ready(function () {
+  CarouselCheck();
+});
+$(window).resize(function () {
+  CarouselCheck();
 });
 
 // trocar arrows do slick

@@ -31,7 +31,6 @@
 
 .js-scroll {
   opacity: 0;
-  transition: 0.5s;
 }
 .js-scroll.passou {
   animation: vemnenem 0.3s both ease;
@@ -40,13 +39,11 @@
 @keyframes vemnenem {
   0% {
     opacity: 20%;
-
-    transform: perspective(3000px) translate3d(3000px, -1000px, 0);
+    transform: translate3d(1000px, -1000px, 0);
   }
   100% {
     opacity: 1;
-
-    transform: perspective(0px) translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
