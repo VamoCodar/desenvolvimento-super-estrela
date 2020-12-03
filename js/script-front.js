@@ -88,6 +88,59 @@ $(".owl-carousel").slick({
   slidesToShow: 1,
 });
 
+//slide promo
+$(".promo-container").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 4,
+  centerMode: false,
+  centerPadding: "0px",
+  arrows: false,
+  slidesToScroll: 1,
+
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+    {
+      breakpoint: 560,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
 //slide produtos
 $(".slick-container").slick({
   dots: false,
@@ -118,10 +171,6 @@ $(".slick-container").slick({
   ],
 });
 
-/* $(".left").click(function () {
-  $(".slider").slick("slickPrev");
-});
- */
 //categorias
 
 function owlInitialize() {
@@ -178,7 +227,45 @@ function owlInitialize() {
     });
   }
 }
+
+//iniializa carousel receitas
+function owlInitialize2() {
+  if ($(window).width() >= 820) {
+    $(".receitas-container").slick("unslick");
+  } else {
+    $(".receitas-container").slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 2,
+      centerMode: false,
+      centerPadding: "0px",
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 780,
+          settings: {
+            dots: false,
+            infinite: false,
+            slidesToShow: 1,
+            centerMode: false,
+            slidesToScroll: 1,
+            centerPadding: "0px",
+            variableWidth: true,
+          },
+        },
+      ],
+    });
+  }
+}
 //só tem carousel apartir de tal tamanho
+//receitas
+$(document).ready(function (e) {
+  owlInitialize2();
+});
+$(window).resize(function () {
+  owlInitialize2();
+});
+//categorias
 $(document).ready(function (e) {
   owlInitialize();
 });
@@ -193,6 +280,28 @@ $(".prox").click(function () {
 $(".ant").click(function () {
   $(".container-cartao").slick("slickPrev");
 });
+//CARTAO BLOCO 1 ARROW
+$(".right").click(function () {
+  $(".owl-carousel").slick("slickNext");
+});
+$(".left").click(function () {
+  $(".owl-carousel").slick("slickPrev");
+});
+
+//
+
+let doly = document.querySelector(".ovelha-doly");
+let elemento = doly.firstElementChild;
+let dolyItem = document.querySelector(".ovelha");
+
+/* $("#indicadores-carousel").on("slid.bs.carousel", function () {
+  let itemAtivo = document.querySelector(".carousel .active .ovelha");
+    if () {
+    doly.children[0].remove();
+  } 
+  itemAtivo.cloneNode(true);
+  doly.appendChild(itemAtivo);
+}); */
 
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);

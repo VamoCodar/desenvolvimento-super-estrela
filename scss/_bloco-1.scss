@@ -73,23 +73,29 @@
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
-      left: 15px;
+      left: 10px;
       margin: auto 0;
       bottom: 0;
       top: 0;
+      cursor: pointer;
+      padding: 5px;
+      opacity: 50%;
     }
     i.right {
       background-image: url(../img/icons/direita-mini.svg);
       width: 16px;
       height: 8px;
-      display: block;
+      display: inline-block;
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
-      right: 10px;
+      right: 5px;
       margin: auto 0;
       bottom: 0;
       top: 0;
+      cursor: pointer;
+      padding: 5px;
+      opacity: 50%;
     }
     //numero card
     span {
@@ -109,9 +115,8 @@
   }
 }
 
-//card mobile
+//card mobile pt1
 .mobile .card {
-  max-width: 300px;
   height: 300px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -134,11 +139,8 @@
     padding: 0 30px;
   }
 }
-//mobile mulher
-.mobile .owl-carousel.owl-loaded {
-  display: block;
-  margin: 0 auto;
-}
+//card mobile pt2
+
 .mobile .cards {
   min-width: 240px;
   max-width: 300px;
@@ -166,6 +168,12 @@
       color: $preto-claro;
     }
   }
+}
+
+//mobile mulher
+.mobile .owl-carousel.owl-loaded {
+  display: block;
+  margin: 0 auto;
 }
 
 .padaria {
