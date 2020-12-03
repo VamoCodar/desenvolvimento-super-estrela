@@ -69,19 +69,6 @@ $(".carousel").carousel({
   interval: 20500, //depois ajustar, pra n ficar passando
 });
 
-/* $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    center: false,
-    singleItem: true,
-    navigation: false, // Show next and prev buttons
-    slideSpeed: 300,
-    items: 1,
-    1000: {
-      center: true,
-    },
-  });
-});
- */
 //carrousel slick
 //slide mulher
 $(".owl-carousel").slick({
@@ -231,7 +218,7 @@ function owlInitialize() {
 
 //iniializa carousel receitas
 function owlInitialize2() {
-  if ($(window).width() >= 820) {
+  if ($(window).width() >= 1000) {
     $(".receitas-container").slick("unslick");
   } else {
     $(".receitas-container").slick({
@@ -317,15 +304,6 @@ $(".left").click(function () {
 let doly = document.querySelector(".ovelha-doly");
 let elemento = doly.firstElementChild;
 let dolyItem = document.querySelector(".ovelha");
-
-/* $("#indicadores-carousel").on("slid.bs.carousel", function () {
-  let itemAtivo = document.querySelector(".carousel .active .ovelha");
-    if () {
-    doly.children[0].remove();
-  } 
-  itemAtivo.cloneNode(true);
-  doly.appendChild(itemAtivo);
-}); */
 
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
