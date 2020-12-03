@@ -65,8 +65,8 @@ function targetMenu(event) {
 clonando(); */
 
 function CarouselCheck() {
-  $(".active .ovelha").appendTo(".ovelha-doly");
   if ($(window).width() <= 1000) {
+    $(".active .ovelha").appendTo(".ovelha-doly");
     $(".carousel").on("slide.bs.carousel", function () {
       $(".active .ovelha").appendTo(".ovelha-doly");
     });
