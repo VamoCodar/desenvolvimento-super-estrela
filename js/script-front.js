@@ -272,16 +272,11 @@ function owlInitialize3() {
 }
 
 //animação
-const cards = document.querySelector(".bloco-3");
 
 const sections = document.querySelectorAll(".js-scroll");
 function animaScroll() {
   sections.forEach((section) => {
     const sectionTop = section.getBoundingClientRect().top;
-    /* console.log(
-      cards.getBoundingClientRect().y,
-      cards.getBoundingClientRect().height
-    ); */
     if (sectionTop < 380) {
       section.classList.add("passou");
     }
