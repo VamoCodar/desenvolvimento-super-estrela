@@ -282,6 +282,7 @@ function animaScroll() {
     }
   });
 }
+
 /* function scrollTop(event) {
   console.log(cards.offsetTop, cards.getBoundingClientRect());
   const sectionTop = section.getBoundingClientRect().top;
