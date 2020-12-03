@@ -64,6 +64,14 @@ function targetMenu(event) {
 }
 clonando(); */
 
+$(".carousel").on("slide.bs.carousel", function () {
+  $(".active .ovelha").appendTo(".ovelha-doly");
+});
+
+window.onload = function () {
+  $(".active .ovelha").appendTo(".ovelha-doly");
+};
+
 //carrousel bootstrap
 $(".carousel").carousel({
   interval: 20500, //depois ajustar, pra n ficar passando
@@ -264,32 +272,53 @@ function owlInitialize3() {
 }
 
 //animação
+const cards = document.querySelector(".bloco-3");
+
 const sections = document.querySelectorAll(".js-scroll");
 function animaScroll() {
   sections.forEach((section) => {
     const sectionTop = section.getBoundingClientRect().top;
+    /* console.log(
+      cards.getBoundingClientRect().y,
+      cards.getBoundingClientRect().height
+    ); */
     if (sectionTop < 380) {
       section.classList.add("passou");
     }
   });
 }
+/* function scrollTop(event) {
+  console.log(cards.offsetTop, cards.getBoundingClientRect());
+  const sectionTop = section.getBoundingClientRect().top;
+  const sectionHeight = section.getBoundingClientRect().height;
+  // const sectionY = section.getBoundingClientRect().y;
+  sections.forEach((section) => {
+    if (sectionHeight + sectionTop == section.offsetTop) {
+      section.setAttribute("style", "animation: voltanenem 500ms both ease;");
+      setTimeout(() => {
+        section.classList.remove("passou");
+        section.removeAttribute("style", "animation");
+      }, 500);
+    }
+  });
+} */
 
 //só tem carousel apartir de tal tamanho
 //receitas
-$(document).ready(function (e) {
+$(document).ready(function () {
   owlInitialize3();
 });
 $(window).resize(function () {
   owlInitialize3();
 });
-$(document).ready(function (e) {
+$(document).ready(function () {
   owlInitialize2();
 });
 $(window).resize(function () {
   owlInitialize2();
 });
 //categorias
-$(document).ready(function (e) {
+$(document).ready(function () {
   owlInitialize();
 });
 $(window).resize(function () {
@@ -318,6 +347,7 @@ let elemento = doly.firstElementChild;
 let dolyItem = document.querySelector(".ovelha");
 
 window.addEventListener("scroll", animaScroll);
+//window.addEventListener("scroll", scrollTop);
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);

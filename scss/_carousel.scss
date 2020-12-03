@@ -219,3 +219,38 @@ button.comprar {
     border: 1px solid $verde;
   }
 } */
+
+.mobile #element-clone {
+  max-width: 500px;
+  margin-top: 30px;
+  h5 {
+    font-size: 14px;
+    color: #595959;
+    font-weight: 700;
+  }
+  h2 {
+    font-weight: 700;
+    color: #595959;
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  p {
+    color: #595959;
+    font-size: 12px;
+  }
+  a {
+    color: $verde;
+  }
+  .circulo-verde {
+    box-shadow: 9px -16px 96px -38px rgba(0, 0, 0, 0.12);
+  }
+  .circulo-branco {
+    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.29);
+  }
+  i {
+    width: 15px;
+  }
+  a {
+    font-size: 14px;
+  }
+}
