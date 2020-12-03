@@ -262,6 +262,18 @@ function owlInitialize3() {
     });
   }
 }
+
+//animação
+const sections = document.querySelectorAll(".js-scroll");
+function animaScroll() {
+  sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if (sectionTop < 380) {
+      section.classList.add("passou");
+    }
+  });
+}
+
 //só tem carousel apartir de tal tamanho
 //receitas
 $(document).ready(function (e) {
@@ -305,6 +317,7 @@ let doly = document.querySelector(".ovelha-doly");
 let elemento = doly.firstElementChild;
 let dolyItem = document.querySelector(".ovelha");
 
+window.addEventListener("scroll", animaScroll);
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);
