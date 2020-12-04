@@ -1,12 +1,21 @@
 //receitas
 .bloco-5 {
   max-width: 100%;
-  height: 320px;
   display: block;
-  background: linear-gradient(-58deg, #00a3da, #5ac0e2);
   max-width: 100%;
-  padding-top: 50px;
   z-index: -99;
+  .relative-5 {
+    position: relative;
+    padding-top: 50px;
+  }
+  .bg-azul {
+    background: linear-gradient(-58deg, #00a3da, #5ac0e2);
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    z-index: -99;
+  }
   .texto {
     padding: 0 15px;
     p {
@@ -41,6 +50,14 @@
   flex-direction: column;
   min-height: 390px;
   max-height: 470px;
+  cursor: pointer;
+  img {
+    transition: 0.4s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
   h2 {
     color: $verde;
     font-family: Montserrat;
@@ -71,8 +88,16 @@
 }
 
 .mobile .bloco-5 {
-  padding-top: 30px;
-  height: 230px;
+  .bg-azul {
+    background: linear-gradient(-58deg, #00a3da, #5ac0e2);
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    top: 0;
+  }
+  .relative-5 {
+    padding-top: 30px;
+  }
 
   .receitas-container {
     max-width: 100%;

@@ -1,12 +1,8 @@
 .bloco-4 {
   max-width: 100%;
-  height: 800px;
   display: block;
   background: linear-gradient(-58deg, #00a3da, #5ac0e2);
-
-  max-width: 100%;
-  margin-top: -145px;
-  padding-top: 300px;
+  padding-top: 100px;
   z-index: -99;
   h3 {
     font-size: 22px;
@@ -17,8 +13,7 @@
   }
 }
 .mobile .bloco-4 {
-  margin-top: 80px;
-  padding-top: 30px;
+  padding-top: 50px;
   height: 450px;
   h3 {
     margin-bottom: 10px;
