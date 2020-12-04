@@ -55,7 +55,7 @@ function targetMenu(event) {
 //sanimar ao scroll subida e descida
 var lastScrollTop = 0;
 
-$(window).scroll(function (event) {
+$(window).scroll(function () {
   var st = $(this).scrollTop();
 
   if (st > lastScrollTop) {
@@ -63,7 +63,7 @@ $(window).scroll(function (event) {
   } else {
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top;
-      if (sectionTop > 250 && section.classList.contains("passou")) {
+      if (sectionTop > 350 && section.classList.contains("passou")) {
         section.setAttribute("style", "animation: voltanenem 500ms both ease;");
         setTimeout(() => {
           section.classList.remove("passou");
@@ -295,7 +295,7 @@ const sections = document.querySelectorAll(".js-scroll");
 function animaScroll() {
   sections.forEach((section) => {
     const sectionTop = section.getBoundingClientRect().top;
-    if (sectionTop < 450) {
+    if (sectionTop < 500) {
       section.classList.add("passou");
     }
   });
