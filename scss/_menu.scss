@@ -495,13 +495,11 @@
   font-size: 14px;
 
   @include d(s) {
-    font-size: 14px;
-    margin-right: -5px;
+    font-size: 10px;
+    margin-right: -10px;
   }
   @include d(ss) {
-    font-size: 10px;
-
-    margin-right: -10px;
+    display: none;
   }
 }
 

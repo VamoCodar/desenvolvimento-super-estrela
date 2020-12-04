@@ -52,24 +52,41 @@ function targetMenu(event) {
     }, 300);
   }
 }
-//clona o filho
+//sanimar ao scroll subida e descida
+var lastScrollTop = 0;
 
-/* function clonando() {
-  const ovelha = document.querySelectorAll(".ovelha");
-  let clone = document.querySelector(".clone-mobile");
-  ovelha.forEach((i) => {
-    let oi = i.cloneNode(true);
-    console.log(oi);
-  });
-}
-clonando(); */
+$(window).scroll(function (event) {
+  var st = $(this).scrollTop();
+
+  if (st > lastScrollTop) {
+    console.log("desceu");
+  } else {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop > 250 && section.classList.contains("passou")) {
+        section.setAttribute("style", "animation: voltanenem 500ms both ease;");
+        setTimeout(() => {
+          section.classList.remove("passou");
+          section.removeAttribute("style", "animation");
+        }, 500);
+      }
+    });
+  }
+  lastScrollTop = st;
+});
 
 function CarouselCheck() {
   if ($(window).width() <= 1000) {
-    $(".active .ovelha").appendTo(".ovelha-doly");
-    $(".carousel").on("slide.bs.carousel", function () {
-      $(".active .ovelha").appendTo(".ovelha-doly");
+    $(".carousel").on("slid.bs.carousel", function () {
+      $("#element-clone .ovelha").detach();
+      $(".active .ovelha").clone().appendTo(".ovelha-doly");
     });
+  }
+}
+
+function CarouselChekInit() {
+  if ($(window).width() <= 1000) {
+    $(".active .ovelha").clone(true).appendTo(".ovelha-doly");
   }
 }
 
@@ -278,7 +295,7 @@ const sections = document.querySelectorAll(".js-scroll");
 function animaScroll() {
   sections.forEach((section) => {
     const sectionTop = section.getBoundingClientRect().top;
-    if (sectionTop < 380) {
+    if (sectionTop < 450) {
       section.classList.add("passou");
     }
   });
@@ -326,6 +343,10 @@ $(document).ready(function () {
 });
 $(window).resize(function () {
   CarouselCheck();
+});
+
+$(document).ready(function () {
+  CarouselChekInit();
 });
 
 // trocar arrows do slick
