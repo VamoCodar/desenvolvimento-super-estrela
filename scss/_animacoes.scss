@@ -33,23 +33,23 @@
   opacity: 0;
 }
 .js-scroll.passou {
-  animation: vemnenem 0.3s both ease;
+  animation: vemnenem 0.2s both ease;
 }
 
 @keyframes vemnenem {
   0% {
     opacity: 20%;
-    transform: translate3d(1000px, -1000px, 0);
+    transform: translateX(1000px);
   }
   100% {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
 }
 
 @keyframes voltanenem {
   0% {
-    transition: 0.5s;
+    transition: 0.3s;
     opacity: 1;
   }
 
