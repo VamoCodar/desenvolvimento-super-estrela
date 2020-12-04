@@ -78,15 +78,15 @@ $(window).scroll(function () {
 function CarouselCheck() {
   if ($(window).width() <= 1000) {
     $(".carousel").on("slid.bs.carousel", function () {
-      $("#element-clone .ovelha").detach();
-      $(".active .ovelha").clone().appendTo(".ovelha-doly");
+      $("#element-clone .slide-section").detach();
+      $(".active .slide-section").clone().appendTo(".slide-section-doly");
     });
   }
 }
 
 function CarouselChekInit() {
   if ($(window).width() <= 1000) {
-    $(".active .ovelha").clone(true).appendTo(".ovelha-doly");
+    $(".active .slide-section").clone(true).appendTo(".slide-section-doly");
   }
 }
 
@@ -274,9 +274,9 @@ function owlInitialize2() {
 //iniializa carousel porte gratis
 function owlInitialize3() {
   if ($(window).width() >= 1000) {
-    $(".porte-gratis").slick("unslick");
+    $(".portes-gratis").slick("unslick");
   } else {
-    $(".porte-gratis").slick({
+    $(".portes-gratis").slick({
       dots: false,
       infinite: true,
       slidesToShow: 1,
@@ -366,9 +366,9 @@ $(".left").click(function () {
 
 //
 
-let doly = document.querySelector(".ovelha-doly");
+let doly = document.querySelector(".slide-section-doly");
 let elemento = doly.firstElementChild;
-let dolyItem = document.querySelector(".ovelha");
+let dolyItem = document.querySelector(".slide-section");
 
 window.addEventListener("scroll", animaScroll);
 //window.addEventListener("scroll", scrollTop);
