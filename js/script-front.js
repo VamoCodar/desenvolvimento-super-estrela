@@ -59,7 +59,6 @@ $(window).scroll(function () {
   var st = $(this).scrollTop();
 
   if (st > lastScrollTop) {
-    console.log("desceu");
   } else {
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top;
