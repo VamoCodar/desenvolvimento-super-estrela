@@ -8,219 +8,271 @@
     <!-- FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <!-- SLICK CSS CARROUSEL -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
     <!-- Bootstrap CSS customizado -->
     <link rel="stylesheet" href="css/main-produtos.css">
+    <!-- SLIDER  -->
+    <link rel="stylesheet" href="css/jsr.css">
+
     <title>Beirinha Shop - Produtos</title>
 </head>
 
 <body class="menu-closed">
+    <div class="space-menu">
+
+    </div>
     <div class="container">
-        <aside class="categorias">
-            <h2>CATEGORIAS</h2>
-            <form class="accordion" id="accordion-categorias">
-                <div>
-                    <a href="#">
-                        <h3>Promoções</h3>
-                    </a>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-1" aria-controls="collapse-1">
-                        Mercearia
-                    </a>
-                    <a href="#" id="collapse-1" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo da mercearia1
-                    </a>
-                    <a href="#" id="collapse-1" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo da mercearia2
-                    </a>
-                    <a href="#" id="collapse-1" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo da mercearia3
-                    </a>
+        <div class="row">
+            <aside class="aside-container">
+                <aside class="categorias">
+                    <h2>CATEGORIAS</h2>
+                    <form class="accordion" id="accordion-categorias">
+                        <div>
+                            <a href="#">
+                                <h3>Promoções</h3>
+                            </a>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-1" aria-controls="collapse-1">
+                                Mercearia
+                            </a>
+                            <a href="#" id="collapse-1" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo da mercearia1
+                            </a>
+                            <a href="#" id="collapse-1" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo da mercearia2
+                            </a>
+                            <a href="#" id="collapse-1" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo da mercearia3
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion " data-toggle="collapse" data-target="#collapse-2" aria-controls="collapse-2">
-                        Frescos e Laticínios
-                    </a>
-                    <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Leite
-                    </a>
-                    <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Natas
-                    </a>
-                    <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Bebida Vegetal
-                    </a>
-                    <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Molho Bechamel
-                    </a>
-                    <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Leite Condensado
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion " data-toggle="collapse" data-target="#collapse-2" aria-controls="collapse-2">
+                                Frescos e Laticínios
+                            </a>
+                            <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Leite
+                            </a>
+                            <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Natas
+                            </a>
+                            <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Bebida Vegetal
+                            </a>
+                            <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Molho Bechamel
+                            </a>
+                            <a href="#" id="collapse-2" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Leite Condensado
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-3" aria-controls="collapseOne">
-                        Congelados
-                    </a>
-                    <a href="#" id="collapse-3" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo congelados 1
-                    </a>
-                    <a href="#" id="collapse-3" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo congelados 2
-                    </a>
-                    <a href="#" id="collapse-3" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo congelados 3
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-3" aria-controls="collapseOne">
+                                Congelados
+                            </a>
+                            <a href="#" id="collapse-3" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo congelados 1
+                            </a>
+                            <a href="#" id="collapse-3" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo congelados 2
+                            </a>
+                            <a href="#" id="collapse-3" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo congelados 3
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-4" aria-controls="collapseOne">
-                        Alimentação Saudável
-                    </a>
-                    <a href="#" id="collapse-4" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo saudavel 1
-                    </a>
-                    <a href="#" id="collapse-4" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo saudavel 2
-                    </a>
-                    <a href="#" id="collapse-4" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo saudavel 3
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-4" aria-controls="collapseOne">
+                                Alimentação Saudável
+                            </a>
+                            <a href="#" id="collapse-4" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo saudavel 1
+                            </a>
+                            <a href="#" id="collapse-4" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo saudavel 2
+                            </a>
+                            <a href="#" id="collapse-4" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo saudavel 3
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-5" aria-controls="collapseOne">
-                        Bebé
-                    </a>
-                    <a href="#" id="collapse-5" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo bebé 1
-                    </a>
-                    <a href="#" id="collapse-5" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo bebé 2
-                    </a>
-                    <a href="#" id="collapse-5" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo bebé 3
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-5" aria-controls="collapseOne">
+                                Bebé
+                            </a>
+                            <a href="#" id="collapse-5" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo bebé 1
+                            </a>
+                            <a href="#" id="collapse-5" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo bebé 2
+                            </a>
+                            <a href="#" id="collapse-5" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo bebé 3
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-6" aria-controls="collapseOne">
-                        Bebidas
-                    </a>
-                    <a href="#" id="collapse-6" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Bebidas 1
-                    </a>
-                    <a href="#" id="collapse-6" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Bebidas 2
-                    </a>
-                    <a href="#" id="collapse-6" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Bebidas 3
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-6" aria-controls="collapseOne">
+                                Bebidas
+                            </a>
+                            <a href="#" id="collapse-6" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Bebidas 1
+                            </a>
+                            <a href="#" id="collapse-6" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Bebidas 2
+                            </a>
+                            <a href="#" id="collapse-6" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Bebidas 3
+                            </a>
 
-                </div>
+                        </div>
 
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-7" aria-controls="collapseOne">
-                        TAKE AWAY
-                    </a>
-                    <a href="#" id="collapse-7" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo TAKE AWAY 1
-                    </a>
-                    <a href="#" id="collapse-7" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo TAKE AWAY 2
-                    </a>
-                    <a href="#" id="collapse-7" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo TAKE AWAY 3
-                    </a>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-7" aria-controls="collapseOne">
+                                TAKE AWAY
+                            </a>
+                            <a href="#" id="collapse-7" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo TAKE AWAY 1
+                            </a>
+                            <a href="#" id="collapse-7" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo TAKE AWAY 2
+                            </a>
+                            <a href="#" id="collapse-7" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo TAKE AWAY 3
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-8" aria-controls="collapseOne">
-                        Higiene e Beleza
-                    </a>
-                    <a href="#" id="collapse-8" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Higiene e Beleza 1
-                    </a>
-                    <a href="#" id="collapse-8" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Higiene e Beleza 2
-                    </a>
-                    <a href="#" id="collapse-8" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Higiene e Beleza 3
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-8" aria-controls="collapseOne">
+                                Higiene e Beleza
+                            </a>
+                            <a href="#" id="collapse-8" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Higiene e Beleza 1
+                            </a>
+                            <a href="#" id="collapse-8" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Higiene e Beleza 2
+                            </a>
+                            <a href="#" id="collapse-8" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Higiene e Beleza 3
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-9" aria-controls="collapseOne">
-                        Limpeza e papel
-                    </a>
-                    <a href="#" id="collapse-9" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Limpeza e papel 1
-                    </a>
-                    <a href="#" id="collapse-9" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Limpeza e papel 2
-                    </a>
-                    <a href="#" id="collapse-9" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Limpeza e papel 3
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-9" aria-controls="collapseOne">
+                                Limpeza e papel
+                            </a>
+                            <a href="#" id="collapse-9" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Limpeza e papel 1
+                            </a>
+                            <a href="#" id="collapse-9" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Limpeza e papel 2
+                            </a>
+                            <a href="#" id="collapse-9" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Limpeza e papel 3
+                            </a>
 
-                </div>
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-10" aria-controls="collapseOne">
-                        Bazar
-                    </a>
-                    <a href="#" id="collapse-10" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Bazar 1
-                    </a>
-                    <a href="#" id="collapse-10" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Bazar 2
-                    </a>
-                    <a href="#" id="collapse-10" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Bazar 3
-                    </a>
+                        </div>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-10" aria-controls="collapseOne">
+                                Bazar
+                            </a>
+                            <a href="#" id="collapse-10" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Bazar 1
+                            </a>
+                            <a href="#" id="collapse-10" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Bazar 2
+                            </a>
+                            <a href="#" id="collapse-10" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Bazar 3
+                            </a>
 
-                </div>
+                        </div>
 
-                <div>
-                    <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-11" aria-controls="collapseOne">
-                        Animais
-                    </a>
-                    <a href="#" id="collapse-11" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Animais 1
-                    </a>
-                    <a href="#" id="collapse-11" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Animais 2
-                    </a>
-                    <a href="#" id="collapse-11" class="collapse px-3 " data-parent="#accordion-categorias">
-                        Conteudo Animais 3
-                    </a>
+                        <div>
+                            <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-11" aria-controls="collapseOne">
+                                Animais
+                            </a>
+                            <a href="#" id="collapse-11" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Animais 1
+                            </a>
+                            <a href="#" id="collapse-11" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Animais 2
+                            </a>
+                            <a href="#" id="collapse-11" class="collapse px-3 " data-parent="#accordion-categorias">
+                                Conteudo Animais 3
+                            </a>
 
-                </div>
-            </form>
-        </aside>
-        <aside>
-            <div class="filtros">
-                <h2>Filtros</h2>
-                <form class="accordion" id="accordion-filtro">
-                    <div>
+                        </div>
+                    </form>
+                </aside>
+                <aside>
+                    <div class="filtros">
+                        <h2>Filtros</h2>
+                        <form class="accordion" id="accordion-filtro">
+                            <div>
 
-                        <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-preco" aria-controls="collapse-preco1">
-                            Preço
-                        </a>
-                        <input id="collapse-preco" class="collapse px-3 slider" data-parent="#collapse-preco" type="range" min="1.00" max="1.000" value="10">
-                        <p> </p>
+                                <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-preco" aria-controls="collapse">
+                                    Preço
+                                </a>
+                                <div id="collapse-preco" class="collapse collapse-item px-3 " data-parent="#accordion-categorias">
+
+                                    <input id="jsr-1-1" name="range1" type="range" min="1" max="999" step="1" value="25" form="minimo">
+                                    <input id="jsr-1-2" name="range2" type="range" min="20" max="1000" step="1" value="50">
+
+                                </div>
 
 
-
-
+                                <a class="nav-link item-accordion" data-toggle="collapse" data-target="#collapse-ordenar" aria-controls="collapse">
+                                    Ordenar
+                                </a>
+                                <div id="collapse-ordenar" class="collapse collapse-item px-3 " data-parent="#collapse-ordenar">
+                                    <a href="#" class="popular">Mais Popular</a>
+                                    <a href="#" class="recente">Mais Recente</a>
+                                    <a href="#" class="crescente">Por preço (crescente)</a>
+                                    <a href="#" class="decrescente">Por preço (decrescente)</a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
-            </div>
+                </aside>
+            </aside>
+            <!-- fim categorias -->
+            <section class="item-ativo">
+                <div class="mapa-produto row align-items-center"><a href="#"><span>Frescos e Laticinios </span></a>
+                    <a href="#">
+                        <p>Leite</p>
+                    </a>
+                </div>
+                <div class=" produto-central row">
+                    <div class="col-md-5"><a href="#"><img src="img/produto-1.png" alt="leite"></a></div>
 
-        </aside>
+                    <div class="detalhes col-md-7">
+
+                        <span class="referencia">Referência: 47231UN</span>
+                        <a href="#" class="nome-item">
+                            <h3>Leite Est. Atlântico UHT M/g 1lt</h3>
+                        </a>
+                        <span class="disponivel">Produto Disponivel</span>
+                        <span class="valor">0.50€</span>
+                        <div class="favorito"> <span></span> Adicionar aos favoritos</div>
+                        <div class="row linha">
+                            <span class="menos"></span>
+                            <p class="numero-items">0</p>
+                            <span class="mais"></span>
+                            <span class="sacola">
+                                <p>Comprar</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </div>
 
+
+    <!-- footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -326,18 +378,28 @@
         </div>
     </nav>
     <!-- BOOTSTRAP JAVASCRIPT -->
-    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-
-
     <!-- SLICK  CARROUSEL -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <!-- SLIDER -->
+
+    <script type="text/javascript" src="js/jsr.js"></script>
+
+
+    <!-- script vannila-->
     <script type="text/javascript" src="js/script-front-produtos.js"></script>
 
 
 
+
 </body>
+<script>
+
+</script>
+
+
 
 </html>

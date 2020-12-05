@@ -54,6 +54,19 @@ function targetMenu(event) {
   }
 }
 
+//SLIDER
+new JSR(["#jsr-1-1", "#jsr-1-2"], {
+  sliders: 2,
+  values: [25, 500],
+  min: 1.0,
+  max: 1000.0,
+  grid: false,
+  labels: {
+    formatter: (value) => {
+      return value.toString() + " €";
+    },
+  },
+});
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);
