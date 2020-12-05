@@ -69,26 +69,6 @@
   }
 }
 
-//dropdown
-.dropdown {
-  .btn-dropdown {
-    font-size: 14px;
-    font-weight: 500;
-    &:hover {
-      text-decoration: none;
-      color: $verde;
-    }
-    //bordas ao lado drop linguagem
-    border-left: 1px solid $cinza-claro;
-    border-right: 1px solid $cinza-claro;
-    margin: 0 10px;
-    padding: 0 10px;
-  }
-}
-.dropdown-menu {
-  z-index: 1040;
-}
-
 // encomendas
 .encomendas {
   margin-top: 2px;
@@ -254,134 +234,6 @@
 
 //dropdown categorias
 //classe que segura todos drop
-.navbar-desktop {
-  .navbar-collapse {
-    transition: 0.3s;
-    background: $branco;
-    position: relative;
-    a:hover {
-      color: $verde;
-    }
-  }
-
-  .dropdown-toggle {
-    &:after {
-      display: none;
-    }
-  }
-
-  .navbar-collapse::before {
-    @include d(m) {
-      display: none;
-    }
-    content: "";
-    background-image: url("../img/icons/hamburg-categoria.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 14px;
-    height: 10px;
-    display: inline-block;
-    position: absolute;
-    left: 10px;
-    top: 15px;
-  }
-  .navbar-collapse:hover {
-    .dropdown-toggle {
-      color: $verde;
-    }
-    &:before {
-      background-image: url("../img/icons/hamburg-hover.svg");
-    }
-    &:after {
-      background-image: url("../img/icons/setinha-hover.svg");
-    }
-  }
-  .navbar-collapse {
-    transition: 0.3s;
-    //taamanho do botao categorias é dado pelo padding nos As
-    a {
-      padding: 10px 90px;
-      display: block;
-      font-weight: 500;
-      @include d(m) {
-        padding: 10px;
-        padding-right: 110px;
-        padding-left: 15px;
-      }
-      text-align: start;
-    }
-  }
-  .categoria-item {
-    a:not(.nav-link) {
-      padding: 0;
-      display: inline;
-    }
-  }
-
-  //setinha de categorias
-  .navbar-collapse::after {
-    content: "";
-    background-image: url("../img/icons/setinha.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10px;
-    height: 7px;
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  //menu aberto do dropdown
-  .dropdown-menu {
-    width: 100%;
-    animation: descida 0.5s ease both;
-    border: none;
-    margin-top: -4px;
-    font-size: 14px;
-    //as dentro de categorias
-    a.nav-link {
-      cursor: pointer;
-      padding: 8px 15px;
-      @include d(s) {
-        padding: 7px 15px;
-      }
-    }
-    //botoes dentro das secoes
-    a:not(.nav-link) {
-      color: rgb(79, 79, 79);
-      &:hover {
-        color: $verde !important;
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .item-accordion {
-    position: relative;
-    display: inline-block;
-    //setinha dos items
-    &:after {
-      content: "";
-      background-image: url("../img/icons/setinha.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 10px;
-      height: 13px;
-      display: inline-block;
-      right: 20px;
-      top: 17px;
-      position: absolute;
-    }
-  }
-  //items abertos
-  .collapse {
-    background: rgb(245, 245, 245);
-    padding: 5px 0;
-  }
-  .dropdown-menu.show {
-    transition: 0.3s ease !important;
-  }
-}
 
 .navbar-desktop.fixed-top {
   z-index: 30;
@@ -389,6 +241,7 @@
 
 //menu do meio
 .menu-items {
+  margin-left: auto;
   @include d(m) {
     display: none;
   }
@@ -406,15 +259,13 @@
   }
 }
 
-.categorias {
-  font-weight: 500;
-}
 .busca .btn-secondary {
   border: 1px solid white;
 }
 
 //busca e estilos
 .busca {
+  margin-left: auto;
   @include d(m) {
     display: none;
   }
@@ -522,7 +373,7 @@
   width: 100%;
   margin: 0;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
   animation: descidaMenu 0.5s ease both;
 
   li {

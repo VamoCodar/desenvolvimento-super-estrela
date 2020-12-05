@@ -1,0 +1,136 @@
+$branco: #fbfbfb;
+$cinza-claro: #d8d8d8;
+$verde: #00a3da;
+$preto-claro: #363636; //imports bootstrap
+//comentados os features que n estão sendo usados
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type"; //pegando algumas margins
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid"; //usado colunas e row
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+//@import "bootstrap/nav";
+//@import "bootstrap/navbar";
+@import "bootstrap/card";
+//@import "bootstrap/breadcrumb";
+//@import "bootstrap/pagination";
+@import "bootstrap/badge";
+//@import "bootstrap/jumbotron";
+//@import "bootstrap/alert";
+//@import "bootstrap/progress";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/close";
+//@import "bootstrap/toasts";
+//@import "bootstrap/tooltip";
+//@import "bootstrap/popover";
+@import "bootstrap/carousel";
+//@import "bootstrap/spinners";
+@import "bootstrap/utilities"; //usado para alinhamento de textos e etc
+//@import "bootstrap/print";
+
+//imports do projeto
+@import "reset";
+@import "responsivo";
+@import "menu";
+@import "animacoes";
+@import "footer";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fbfbfb;
+  overflow-x: hidden;
+}
+.container {
+  padding-right: 25px;
+  padding-left: 25px;
+  position: relative;
+  max-width: 1320px;
+}
+//estilos produtos
+
+.categorias {
+  margin-top: 204px;
+  overflow-y: auto;
+  height: 550px;
+  width: 270px;
+  background: #f6f6f6;
+  padding-left: 30px;
+  border-left: 9px solid $verde;
+
+  h2 {
+    opacity: 0.1835705;
+    color: #494949;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px 0;
+    padding-left: 0px;
+  }
+  //promoções azul
+  h3 {
+    color: $verde;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  form {
+    border-top: 5px solid #fbfbfb;
+    padding-top: 20px;
+    a.nav-link {
+      display: inline-block;
+      margin: 5px 0;
+      color: #3a3a3a;
+      font-size: 14px;
+      cursor: pointer;
+      &:after {
+        content: "";
+        background-image: url("../img/icons/setinha.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 10px;
+        height: 7px;
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+    a {
+      font-size: 12px;
+      display: block;
+      color: #6b6b6b;
+      padding: 3px 0;
+      &:hover {
+        text-decoration: underline $verde;
+      }
+    }
+  }
+}
+
+.filtros {
+  overflow-y: auto;
+  width: 270px;
+  background: #f6f6f6;
+  padding-left: 30px;
+  margin-top: 20px;
+  border-left: 9px solid $verde;
+  h2 {
+    opacity: 0.1835705;
+    color: #494949;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px 0;
+    padding-left: 0px;
+  }
+  .slider {
+    display: block;
+  }
+}
