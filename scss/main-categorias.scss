@@ -277,6 +277,9 @@ a {
   height: 300px;
   background: #ffffff;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.13);
+  @include d(s) {
+    margin-right: 0px !important;
+  }
   h2 {
     color: #3c3c3c;
     font-family: Montserrat;
@@ -493,6 +496,9 @@ a {
     z-index: 99;
     animation: vemdeladin 0.3s ease both;
   }
+}
+.desktop .ativo-filtro .filtro-mobile {
+  display: none;
 }
 
 //pagination
