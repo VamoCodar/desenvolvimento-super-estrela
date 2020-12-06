@@ -74,11 +74,11 @@ function fechaCatego(event) {
   }
 }
 
-function fechaFiltro(event) {
+/* function fechaFiltro(event) {
   console.log(event.target);
   if (event.target != filtro && body.classList.contains("ativo-filtro")) {
   }
-}
+} */
 
 function CarouselChekInit() {
   if ($(window).width() <= 1000) {
@@ -87,7 +87,7 @@ function CarouselChekInit() {
 }
 
 $(window).resize(function () {
-  CarouselCheck();
+  CarouselCheckInit();
 });
 
 $(document).ready(function () {
@@ -99,4 +99,4 @@ window.addEventListener("resize", resize);
 botaoCategorias.addEventListener("click", abreCatego);
 body.addEventListener("click", fechaCatego);
 filtro.addEventListener("click", abreFiltro);
-body.addEventListener("click", fechaFiltro);
+//body.addEventListener("click", fechaFiltro);
