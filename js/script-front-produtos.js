@@ -3,6 +3,8 @@ const body = document.querySelector("body");
 const botaoMenuMobile = document.querySelector(".hamburguer");
 const botaoMenuMobileA = document.querySelector(".hamburguer a");
 const menuMobile = document.querySelector(".menu-mobile");
+const botaoCategorias = document.querySelector(".categorias-mobile");
+const aside = document.querySelector(".aside-container");
 
 function checagem() {
   if (window.innerWidth >= 993) {
@@ -53,20 +55,6 @@ function targetMenu(event) {
     }, 300);
   }
 }
-
-//SLIDER
-new JSR(["#jsr-1-1", "#jsr-1-2"], {
-  sliders: 2,
-  values: [25, 500],
-  min: 1.0,
-  max: 1000.0,
-  grid: false,
-  labels: {
-    formatter: (value) => {
-      return value.toString() + " €";
-    },
-  },
-});
 
 //carousel
 $(".relacionados-container").slick({
@@ -120,8 +108,6 @@ $(".relacionados-container").slick({
     // instead of a settings object
   ],
 });
-const botaoCategorias = document.querySelector(".categorias-mobile");
-const aside = document.querySelector(".aside-container");
 
 function abreCatego() {
   body.classList.toggle("ativo");
@@ -138,8 +124,8 @@ function fechaCatego(event) {
   console.log();
 }
 
-botaoCategorias.addEventListener("click", abreCatego);
-body.addEventListener("click", fechaCatego);
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);
+botaoCategorias.addEventListener("click", abreCatego);
+body.addEventListener("click", fechaCatego);
