@@ -80,18 +80,18 @@ function fechaCatego(event) {
   }
 } */
 
-function CarouselChekInit() {
+function filtroInit() {
   if ($(window).width() <= 1000) {
     $(".filtros").appendTo(".filtro-mobile");
   }
 }
 
 $(window).resize(function () {
-  CarouselCheckInit();
+  filtroInit();
 });
 
 $(document).ready(function () {
-  CarouselChekInit();
+  filtroInit();
 });
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
