@@ -61,3 +61,14 @@
     transform: translateX(100px);
   }
 }
+
+@keyframes vemdeladin {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

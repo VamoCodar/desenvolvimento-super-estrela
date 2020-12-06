@@ -5,6 +5,7 @@ const botaoMenuMobileA = document.querySelector(".hamburguer a");
 const menuMobile = document.querySelector(".menu-mobile");
 const botaoCategorias = document.querySelector(".categorias-mobile");
 const aside = document.querySelector(".aside-container");
+const filtro = document.querySelector(".button-filtro");
 
 function checagem() {
   if (window.innerWidth >= 993) {
@@ -44,6 +45,10 @@ function abreMenu() {
     body.classList.toggle("menu-closed");
   }
 }
+//filtro
+function abreFiltro() {
+  body.classList.toggle("ativo-filtro");
+}
 //fecha menu e anima
 function targetMenu(event) {
   if (event.target != botaoMenuMobile && body.classList.contains("menu-open")) {
@@ -55,59 +60,6 @@ function targetMenu(event) {
     }, 300);
   }
 }
-
-//carousel
-$(".relacionados-container").slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-
-  slidesToShow: 4,
-  centerMode: false,
-  centerPadding: "0px",
-  arrows: false,
-  slidesToScroll: 1,
-
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        variableWidth: true,
-      },
-    },
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        variableWidth: true,
-      },
-    },
-    {
-      breakpoint: 560,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false,
-        centerMode: false,
-        variableWidth: true,
-      },
-    },
-
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
-});
 
 function abreCatego() {
   body.classList.toggle("ativo");
@@ -122,8 +74,29 @@ function fechaCatego(event) {
   }
 }
 
+function fechaFiltro(event) {
+  console.log(event.target);
+  if (event.target != filtro && body.classList.contains("ativo-filtro")) {
+  }
+}
+
+function CarouselChekInit() {
+  if ($(window).width() <= 1000) {
+    $(".filtros").appendTo(".filtro-mobile");
+  }
+}
+
+$(window).resize(function () {
+  CarouselCheck();
+});
+
+$(document).ready(function () {
+  CarouselChekInit();
+});
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);
 botaoCategorias.addEventListener("click", abreCatego);
 body.addEventListener("click", fechaCatego);
+filtro.addEventListener("click", abreFiltro);
+body.addEventListener("click", fechaFiltro);
