@@ -417,7 +417,7 @@ a {
       margin-left: 45px;
       margin-top: 10px;
       &:hover {
-        font-size: 18px;
+        transform: scale(1.1);
 
         span {
           transform: scale(1.1);
