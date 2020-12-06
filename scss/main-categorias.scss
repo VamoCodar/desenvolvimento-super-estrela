@@ -485,13 +485,13 @@ a {
 .ativo-filtro .filtro-mobile {
   display: block !important;
   position: absolute;
-  top: 0px;
+  top: 40px;
   left: 0px;
   .filtros {
     display: block !important;
     position: absolute;
     z-index: 99;
-    animation: descida 0.5s ease both;
+    animation: vemdeladin 0.3s ease both;
   }
 }
 
