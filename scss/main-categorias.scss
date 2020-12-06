@@ -270,6 +270,7 @@ a {
 }
 .produtos-card {
   margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 20px;
   position: relative;
   padding: 10px 15px;
@@ -278,7 +279,12 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.13);
   @include d(s) {
-    margin-right: 0px !important;
+    margin: 10px 0 !important;
+    margin-bottom: 20px;
+  }
+  @include d(s2) {
+    margin: 0px !important;
+    margin-bottom: 20px;
   }
   h2 {
     color: #3c3c3c;
