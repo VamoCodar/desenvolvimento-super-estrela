@@ -67,6 +67,79 @@ new JSR(["#jsr-1-1", "#jsr-1-2"], {
     },
   },
 });
+
+//carousel
+$(".relacionados-container").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+
+  slidesToShow: 4,
+  centerMode: false,
+  centerPadding: "0px",
+  arrows: false,
+  slidesToScroll: 1,
+
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+    {
+      breakpoint: 560,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        variableWidth: true,
+      },
+    },
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
+const botaoCategorias = document.querySelector(".categorias-mobile");
+const aside = document.querySelector(".aside-container");
+
+function abreCatego() {
+  body.classList.toggle("ativo");
+}
+function fechaCatego(event) {
+  if (
+    event.target != botaoCategorias &&
+    !event.path[0].classList.contains("nav-link") &&
+    body.classList.contains("ativo")
+  ) {
+    body.classList.toggle("ativo");
+  }
+
+  console.log();
+}
+
+botaoCategorias.addEventListener("click", abreCatego);
+body.addEventListener("click", fechaCatego);
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);
