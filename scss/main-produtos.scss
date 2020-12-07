@@ -201,6 +201,8 @@ a {
   display: block;
   position: absolute;
   top: 40px;
+  z-index: 99;
+
   margin-top: 30px;
   animation: vemdeladin 0.3s ease both;
 

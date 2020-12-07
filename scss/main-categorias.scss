@@ -195,6 +195,7 @@ a {
 
 .mobile .aside-container {
   display: none;
+  z-index: 99;
 }
 
 .mobile.ativo .aside-container {
@@ -204,7 +205,6 @@ a {
   top: 40px;
   margin-top: 30px;
   animation: vemdeladin 0.3s ease both;
-
   .categorias {
     z-index: 99;
 
