@@ -192,6 +192,21 @@ a {
     }
   }
 }
+.collapse {
+  transition: 0.2s ease-in-out;
+  background: rgb(245, 245, 245);
+
+  //botoes dentro das secoes
+  a {
+    color: rgb(79, 79, 79);
+    display: block;
+    padding: 5px 0;
+    &:hover {
+      color: $azul !important;
+      text-decoration: underline;
+    }
+  }
+}
 
 .mobile .aside-container {
   display: none;

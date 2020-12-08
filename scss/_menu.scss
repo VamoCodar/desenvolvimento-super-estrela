@@ -380,6 +380,11 @@
 .navbar-desktop.fixed-top {
   z-index: 30;
 }
+.mobile .dropdown-menu .collapse {
+  a {
+    font-size: 14px;
+  }
+}
 
 //menu do meio
 .menu-items {
