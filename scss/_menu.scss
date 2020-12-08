@@ -311,12 +311,6 @@
       text-align: start;
     }
   }
-  .categoria-item {
-    a:not(.nav-link) {
-      padding: 0;
-      display: inline;
-    }
-  }
 
   //setinha de categorias
   .navbar-collapse::after {
@@ -346,12 +340,20 @@
         padding: 7px 15px;
       }
     }
-    //botoes dentro das secoes
-    a:not(.nav-link) {
-      color: rgb(79, 79, 79);
-      &:hover {
-        color: $azul !important;
-        text-decoration: underline;
+
+    .collapse {
+      transition: 0.2s ease-in-out;
+      background: rgb(245, 245, 245);
+
+      //botoes dentro das secoes
+      a {
+        color: rgb(79, 79, 79);
+        display: block;
+        padding: 5px 0;
+        &:hover {
+          color: $azul !important;
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -372,14 +374,6 @@
       top: 17px;
       position: absolute;
     }
-  }
-  //items abertos
-  .collapse {
-    background: rgb(245, 245, 245);
-    padding: 5px 0;
-  }
-  .dropdown-menu.show {
-    transition: 0.3s ease !important;
   }
 }
 
