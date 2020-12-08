@@ -144,7 +144,7 @@ button.comprar {
     transition: 0.3s ease;
   }
   //compre aqui
-  color: $verde;
+  color: $azul;
   font-weight: 500;
   margin-top: 10px;
   i {
@@ -155,7 +155,7 @@ button.comprar {
 .comprar {
   &:hover {
     a {
-      color: $verde;
+      color: $azul;
       transform: translateX(10px);
     }
     .circulo-branco {
@@ -171,7 +171,7 @@ button.comprar {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: $verde;
+  background: $azul;
   display: block;
   transition: 0.3s ease;
   box-shadow: 0px 0px 2px #939393;
@@ -216,7 +216,7 @@ button.comprar {
     color: black;
   }
   .circulo-branco {
-    border: 1px solid $verde;
+    border: 1px solid $azul;
   }
 } */
 .desktop #element-clone {
@@ -241,7 +241,7 @@ button.comprar {
     font-size: 12px;
   }
   a {
-    color: $verde;
+    color: $azul;
   }
   .circulo-verde {
     box-shadow: 9px -16px 96px -38px rgba(0, 0, 0, 0.12);

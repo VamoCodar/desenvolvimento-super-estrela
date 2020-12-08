@@ -1,6 +1,6 @@
 $branco: #fbfbfb;
 $cinza-claro: #d8d8d8;
-$verde: #00a3da;
+$azul: #00a3da;
 $preto-claro: #363636; //imports bootstrap
 //comentados os features que n estão sendo usados
 @import "bootstrap/functions";
@@ -77,7 +77,7 @@ a {
   width: 270px;
   background: #f6f6f6;
   padding-left: 30px;
-  border-left: 9px solid $verde;
+  border-left: 9px solid $azul;
 
   h2 {
     opacity: 0.1835705;
@@ -92,7 +92,7 @@ a {
   .promo {
     padding: 0;
     h3 {
-      color: $verde;
+      color: $azul;
       font-weight: 500;
       font-size: 16px;
     }
@@ -124,7 +124,7 @@ a {
       color: #6b6b6b;
       padding: 3px 0;
       &:hover {
-        text-decoration: underline $verde;
+        text-decoration: underline $azul;
       }
     }
   }
@@ -136,7 +136,7 @@ a {
   background: #f6f6f6;
   padding-left: 30px;
   margin-top: 20px;
-  border-left: 9px solid $verde;
+  border-left: 9px solid $azul;
   h2 {
     opacity: 0.1835705;
     color: #494949;
@@ -154,7 +154,7 @@ a {
     padding: 3px 0;
 
     button {
-      background: $verde;
+      background: $azul;
       max-width: 70px;
       font-size: 14px;
       margin-left: auto;
@@ -188,7 +188,7 @@ a {
       color: #6b6b6b;
       padding: 3px 0;
       &:hover {
-        text-decoration: underline $verde;
+        text-decoration: underline $azul;
       }
     }
   }
@@ -293,7 +293,7 @@ a {
     }
   }
   .valor {
-    color: $verde;
+    color: $azul;
     font-size: 30px;
     font-weight: 700;
     line-height: 35.280003px;
@@ -309,7 +309,7 @@ a {
     transition: 0.3s;
 
     &:hover {
-      color: $verde;
+      color: $azul;
 
       span {
         transform: scale(1.1);
@@ -376,6 +376,7 @@ a {
     border-bottom: solid 1px #ededed;
     width: 340px;
     align-items: center;
+    margin-left: 0;
   }
   .numero-items {
     color: #bcbcbc;
@@ -406,7 +407,7 @@ a {
       cursor: pointer;
       display: inline-block;
 
-      color: $verde;
+      color: $azul;
       font-size: 16px;
       font-weight: 600;
       line-height: 16px;
@@ -492,7 +493,7 @@ a {
     line-height: 23.52px;
   }
   span {
-    color: $verde;
+    color: $azul;
     font-weight: 700;
     margin-top: 20px;
     font-size: 20px;
@@ -555,7 +556,7 @@ a {
       position: absolute;
       left: 45px;
       font-size: 10px;
-      color: $verde;
+      color: $azul;
       vertical-align: middle;
       bottom: 10px;
       font-weight: 700;
@@ -606,7 +607,7 @@ a {
 .mobile .categorias-mobile {
   margin: 10px 0;
   display: inline-block;
-  background: $verde;
+  background: $azul;
   border-radius: 18px;
   max-width: 150px;
   padding: 10px 15px;
@@ -618,4 +619,7 @@ a {
   &:hover {
     transform: scale(1.1);
   }
+}
+.mobile .navbar-desktop {
+  z-index: 1990;
 }

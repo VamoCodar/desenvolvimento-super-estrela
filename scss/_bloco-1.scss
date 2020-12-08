@@ -43,7 +43,7 @@
       padding-top: 20px;
       font-size: 24px;
       font-weight: 500;
-      color: $verde;
+      color: $azul;
       display: block;
     }
     //texto card
@@ -111,7 +111,7 @@
     }
   }
   .card-2 {
-    background-image: url(../img/card-2.png);
+    background-image: url(../img/card-2.jpg);
   }
 }
 
@@ -180,7 +180,7 @@
   padding: 20px;
   height: 190px;
   grid-area: pao;
-  background: $verde;
+  background: $azul;
   min-width: 480px;
   position: relative;
   p {
@@ -359,7 +359,7 @@
     line-height: 23.52px;
   }
   span {
-    color: $verde;
+    color: $azul;
     font-weight: 700;
     margin-top: 20px;
     font-size: 20px;
@@ -451,7 +451,7 @@
       position: absolute;
       left: 45px;
       font-size: 10px;
-      color: $verde;
+      color: $azul;
       vertical-align: middle;
       bottom: 10px;
       font-weight: 700;
