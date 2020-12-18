@@ -195,6 +195,15 @@ button.comprar {
   user-select: text;
 }
 
+.promo-container.slick-slider {
+  user-select: none;
+}
+
+.collapse.show {
+  overflow-anchor: auto;
+  max-height: 50vh;
+  overflow-y: auto;
+}
 /* .mobile .carousel-caption {
   display: block;
   position: relative;

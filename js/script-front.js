@@ -102,17 +102,15 @@ $(".owl-carousel").slick({
   slidesToShow: 1,
 });
 
-//slide promo
-$(".promo-container").slick({
+/* $(".promo-container").slick({
   dots: false,
   infinite: false,
   speed: 300,
-
-  slidesToShow: 4,
-  centerMode: false,
-  centerPadding: "0px",
+  slidesToShow: 1,
+  centerMode: true,
   arrows: false,
   slidesToScroll: 1,
+  variableWidth: true,
 
   responsive: [
     {
@@ -153,7 +151,7 @@ $(".promo-container").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
-});
+}); */
 //slide produtos
 $(".slick-container").slick({
   dots: false,
@@ -363,8 +361,6 @@ $(".left").click(function () {
   $(".owl-carousel").slick("slickPrev");
 });
 
-//
-
 let doly = document.querySelector(".slide-section-doly");
 let elemento = doly.firstElementChild;
 let dolyItem = document.querySelector(".slide-section");
@@ -374,3 +370,5 @@ window.addEventListener("scroll", animaScroll);
 body.addEventListener("click", targetMenu);
 botaoMenuMobile.addEventListener("click", abreMenu);
 window.addEventListener("resize", resize);
+
+//slide promo

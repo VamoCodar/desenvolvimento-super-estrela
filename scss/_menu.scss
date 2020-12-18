@@ -2,6 +2,7 @@
 .sub-navbar-desktop {
   background: $branco;
 }
+
 .logo {
   background-image: url(../img/logo2.png);
   background-repeat: no-repeat;
@@ -11,6 +12,7 @@
   height: 38px;
   display: block;
 }
+
 //transition itens menu branco
 .itens-sub-nav div span,
 .itens-sub-nav div a,
@@ -24,9 +26,11 @@
     margin: 0 8px;
     width: 30px;
   }
+
   :hover {
     color: $azul;
   }
+
   //redes sociais ajustes e hover
   .youtube {
     margin-right: 12px;
@@ -37,10 +41,12 @@
     height: 16px;
     vertical-align: middle;
     display: inline-block;
+
     &:hover {
       background-image: url(../img/icons/youtube-hover.svg);
     }
   }
+
   .facebook {
     margin-right: 12px;
     background-image: url(../img/icons/facebook.svg);
@@ -50,10 +56,12 @@
     height: 18px;
     vertical-align: middle;
     display: inline-block;
+
     &:hover {
       background-image: url(../img/icons/facebook-hover.svg);
     }
   }
+
   .instagram {
     margin-right: 12px;
     background-image: url(../img/icons/instagram.svg);
@@ -63,6 +71,7 @@
     height: 18px;
     vertical-align: middle;
     display: inline-block;
+
     &:hover {
       background-image: url(../img/icons/instagram-hover.svg);
     }
@@ -74,10 +83,12 @@
   .btn-dropdown {
     font-size: 14px;
     font-weight: 500;
+
     &:hover {
       text-decoration: none;
       color: $azul;
     }
+
     //bordas ao lado drop linguagem
     border-left: 1px solid $cinza-claro;
     border-right: 1px solid $cinza-claro;
@@ -85,6 +96,7 @@
     padding: 0 10px;
   }
 }
+
 .dropdown-menu {
   z-index: 1040;
 }
@@ -96,6 +108,7 @@
   font-weight: 500;
   border-right: 1px solid $cinza-claro;
   padding-right: 15px;
+
   &:hover {
     .icon-encomendas {
       background-image: url(../img/icons/carrinho-hover.svg);
@@ -112,12 +125,14 @@
     display: inline-block;
   }
 }
+
 //minha conta
 .minha-conta {
   font-size: 14px;
   font-weight: 500;
   padding-right: 15px;
   padding-left: 10px;
+
   .minha-conta-link {
     &:hover {
       .icon-conta {
@@ -136,6 +151,7 @@
     vertical-align: middle;
     display: inline-block;
   }
+
   .favoritas {
     background-image: url(../img/icons/coracao.svg);
     background-repeat: no-repeat;
@@ -151,6 +167,7 @@
       background-image: url(../img/icons/coracao-hover.svg);
     }
   }
+
   .sacola {
     background-image: url(../img/icons/sacola-p.svg);
     background-repeat: no-repeat;
@@ -163,11 +180,13 @@
     margin-bottom: 2px;
     position: relative;
     margin-right: 0px;
+
     &:hover {
       background-image: url(../img/icons/sacola-hover.svg);
     }
   }
 }
+
 //notificações
 .badge {
   display: none;
@@ -182,16 +201,19 @@
   align-items: center;
   color: $branco;
   font-weight: 500;
+
   &:hover {
     color: $branco;
   }
 }
+
 .mobile .badge {
   width: 15px;
   height: 15px;
   top: -4px;
   right: -7px;
 }
+
 //classe ativo mostra a badge
 .ativo.badge {
   display: inline-flex;
@@ -202,14 +224,16 @@
 }
 
 //menu mobile
-.desktop .sub-navbar-mobile {
+.sub-navbar-mobile {
   display: none;
 }
+
 .mobile .sub-navbar-mobile {
   padding-left: 15px;
   padding-right: 10px;
   display: block;
   background: $branco;
+
   .logo {
     background-image: url(../img/logo-mobile.png);
     background-repeat: no-repeat;
@@ -218,18 +242,22 @@
     height: 28px;
     display: block;
   }
+
   //items mobile
   .sacola {
     margin: 0 5px;
   }
+
   .icon-conta {
     width: 20px;
     height: 20px;
   }
+
   //aumentar zona de toque mobile
   a {
     padding: 10px 10px;
   }
+
   .sacola-link {
     padding: 10px 10px;
   }
@@ -243,11 +271,13 @@
   padding-bottom: 6px;
   padding-right: 25px;
   padding-left: 25px;
+
   @include d(m) {
     padding: 10px 0;
     z-index: 99999;
   }
 }
+
 .mobile .navbar-desktop {
   margin-top: 44px;
 }
@@ -259,6 +289,7 @@
     transition: 0.3s;
     background: $branco;
     position: relative;
+
     a:hover {
       color: $azul;
     }
@@ -274,6 +305,7 @@
     @include d(m) {
       display: none;
     }
+
     content: "";
     background-image: url("../img/icons/hamburg-categoria.svg");
     background-repeat: no-repeat;
@@ -285,29 +317,36 @@
     left: 10px;
     top: 15px;
   }
+
   .navbar-collapse:hover {
     .dropdown-toggle {
       color: $azul;
     }
+
     &:before {
       background-image: url("../img/icons/hamburg-hover.svg");
     }
+
     &:after {
       background-image: url("../img/icons/setinha-hover.svg");
     }
   }
+
   .navbar-collapse {
     transition: 0.3s;
+
     //taamanho do botao categorias é dado pelo padding nos As
     a {
       padding: 10px 90px;
       display: block;
       font-weight: 500;
+
       @include d(m) {
         padding: 10px;
         padding-right: 110px;
         padding-left: 15px;
       }
+
       text-align: start;
     }
   }
@@ -325,6 +364,7 @@
     right: 20px;
     top: 20px;
   }
+
   //menu aberto do dropdown
   .dropdown-menu {
     width: 100%;
@@ -332,10 +372,12 @@
     border: none;
     margin-top: -4px;
     font-size: 14px;
+
     //as dentro de categorias
     a.nav-link {
       cursor: pointer;
       padding: 8px 15px;
+
       @include d(s) {
         padding: 7px 15px;
       }
@@ -350,6 +392,7 @@
         color: rgb(79, 79, 79);
         display: block;
         padding: 5px 0;
+
         &:hover {
           color: $azul !important;
           text-decoration: underline;
@@ -361,6 +404,7 @@
   .item-accordion {
     position: relative;
     display: inline-block;
+
     //setinha dos items
     &:after {
       content: "";
@@ -380,6 +424,7 @@
 .navbar-desktop.fixed-top {
   z-index: 30;
 }
+
 .mobile .dropdown-menu .collapse {
   a {
     font-size: 14px;
@@ -391,6 +436,7 @@
   @include d(m) {
     display: none;
   }
+
   ul li a {
     transition: 0.3s;
     margin-left: 20px;
@@ -399,6 +445,7 @@
     text-transform: uppercase;
     font-size: 14px;
     color: $branco;
+
     &:hover {
       color: black;
     }
@@ -408,6 +455,7 @@
 .categorias {
   font-weight: 500;
 }
+
 .busca .btn-secondary {
   border: 1px solid white;
 }
@@ -417,23 +465,29 @@
   @include d(m) {
     display: none;
   }
+
   input {
     background: transparent;
   }
+
   .form-control {
     border-radius: 0;
     border: 1px solid $cinza-claro;
   }
+
   ::placeholder {
     color: $branco;
     font-size: 12px;
     vertical-align: middle;
   }
+
   max-width: 300px;
+
   .btn-secondary {
     background: $branco;
     color: $black;
     font-size: 12px;
+
     &:before {
       content: "";
       display: inline-block;
@@ -447,26 +501,32 @@
     }
   }
 }
+
 //hamburguer icon dispara menu mobile
 
 .desktop .menu-mobile {
   display: none;
 }
+
 .menu-open .menu-mobile {
   display: block;
 }
+
 .menu-closed .menu-mobile {
   display: none;
 }
+
 .desktop .hamburguer {
   display: none;
 }
+
 .mobile .hamburguer {
   display: block;
   color: white;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+
   // hamburguer do menu
   &:after {
     content: "";
@@ -482,12 +542,15 @@
     padding-bottom: 20px;
   }
 }
+
 .hamburguer-group {
   display: none;
 }
+
 .mobile .hamburguer-group {
   display: flex;
 }
+
 /* .hamburguer-group {
   margin-left: auto;
   display: flex;
@@ -503,6 +566,7 @@
     font-size: 10px;
     margin-right: -10px;
   }
+
   @include d(ss) {
     display: none;
   }
@@ -526,15 +590,18 @@
 
   li {
     margin-top: 20px;
+
     a {
       color: $branco;
       font-weight: 700;
     }
+
     &:last-child {
       margin-bottom: 20px;
     }
   }
 }
+
 .mobile .sub-navbar-mobile .sacola-link {
   @include d(ss) {
     padding: 10px 0px;

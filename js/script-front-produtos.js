@@ -56,7 +56,7 @@ function targetMenu(event) {
   }
 }
 
-//carousel
+/* //carousel
 $(".relacionados-container").slick({
   dots: false,
   infinite: false,
@@ -107,7 +107,7 @@ $(".relacionados-container").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
-});
+}); */
 
 function abreCatego() {
   body.classList.toggle("ativo");
